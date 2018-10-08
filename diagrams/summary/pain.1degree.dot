@@ -1,0 +1,36 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "pain" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "pain" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">pain</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="anes_enc_y_n" COLSPAN="3" ALIGN="LEFT">anes_enc_y_n</TD></TR>
+      <TR><TD PORT="pain_datetime" COLSPAN="3" ALIGN="LEFT">pain_datetime</TD></TR>
+      <TR><TD PORT="pain_pre_post_indicator" COLSPAN="3" ALIGN="LEFT">pain_pre_post_indicator</TD></TR>
+      <TR><TD PORT="pain_uf_dvprs" COLSPAN="3" ALIGN="LEFT">pain_uf_dvprs</TD></TR>
+      <TR><TD PORT="pain_jax" COLSPAN="3" ALIGN="LEFT">pain_jax</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3,194,658 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/pain.html"
+    tooltip="pain"
+  ];
+}

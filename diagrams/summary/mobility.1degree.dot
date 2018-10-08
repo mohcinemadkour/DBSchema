@@ -1,0 +1,52 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "mobility" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "mobility" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">mobility</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="recorded_time" COLSPAN="3" ALIGN="LEFT">recorded_time</TD></TR>
+      <TR><TD PORT="activity" COLSPAN="3" ALIGN="LEFT">activity</TD></TR>
+      <TR><TD PORT="level_of_assistance" COLSPAN="3" ALIGN="LEFT">level_of_assistance</TD></TR>
+      <TR><TD PORT="positioning_frequency" COLSPAN="3" ALIGN="LEFT">positioning_frequency</TD></TR>
+      <TR><TD PORT="pressure_relief" COLSPAN="3" ALIGN="LEFT">pressure_relief</TD></TR>
+      <TR><TD PORT="contributing_factors" COLSPAN="3" ALIGN="LEFT">contributing_factors</TD></TR>
+      <TR><TD PORT="head_of_bed_elevated" COLSPAN="3" ALIGN="LEFT">head_of_bed_elevated</TD></TR>
+      <TR><TD PORT="repositioned" COLSPAN="3" ALIGN="LEFT">repositioned</TD></TR>
+      <TR><TD PORT="anti_embolism_devices" COLSPAN="3" ALIGN="LEFT">anti_embolism_devices</TD></TR>
+      <TR><TD PORT="anti_embolism_intervention" COLSPAN="3" ALIGN="LEFT">anti_embolism_intervention</TD></TR>
+      <TR><TD PORT="pressure_relief_type" COLSPAN="3" ALIGN="LEFT">pressure_relief_type</TD></TR>
+      <TR><TD PORT="pressure_relief_assistance" COLSPAN="3" ALIGN="LEFT">pressure_relief_assistance</TD></TR>
+      <TR><TD PORT="assistive_device" COLSPAN="3" ALIGN="LEFT">assistive_device</TD></TR>
+      <TR><TD PORT="range_of_motion" COLSPAN="3" ALIGN="LEFT">range_of_motion</TD></TR>
+      <TR><TD PORT="heels_feet" COLSPAN="3" ALIGN="LEFT">heels_feet</TD></TR>
+      <TR><TD PORT="cpm" COLSPAN="3" ALIGN="LEFT">cpm</TD></TR>
+      <TR><TD PORT="transport_method" COLSPAN="3" ALIGN="LEFT">transport_method</TD></TR>
+      <TR><TD PORT="ambulation_response" COLSPAN="3" ALIGN="LEFT">ambulation_response</TD></TR>
+      <TR><TD PORT="transport_with" COLSPAN="3" ALIGN="LEFT">transport_with</TD></TR>
+      <TR><TD PORT="distance_ambulated_ft" COLSPAN="3" ALIGN="LEFT">distance_ambulated_ft</TD></TR>
+      <TR><TD PORT="pt_refused_anti_embolism_intervention" COLSPAN="3" ALIGN="LEFT">pt_refused_anti_embolism_intervention</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2,204,890 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/mobility.html"
+    tooltip="mobility"
+  ];
+}

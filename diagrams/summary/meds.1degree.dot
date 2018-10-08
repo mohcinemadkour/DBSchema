@@ -1,0 +1,65 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "meds" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "meds" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">meds</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="med_order_num" COLSPAN="3" ALIGN="LEFT">med_order_num</TD></TR>
+      <TR><TD PORT="med_order_status" COLSPAN="3" ALIGN="LEFT">med_order_status</TD></TR>
+      <TR><TD PORT="med_order_desc" COLSPAN="3" ALIGN="LEFT">med_order_desc</TD></TR>
+      <TR><TD PORT="med_order_display_name" COLSPAN="3" ALIGN="LEFT">med_order_display_name</TD></TR>
+      <TR><TD PORT="med_order_freq_desc" COLSPAN="3" ALIGN="LEFT">med_order_freq_desc</TD></TR>
+      <TR><TD PORT="med_order_discrete_dispense_qty" COLSPAN="3" ALIGN="LEFT">med_order_discrete_dispense_qty</TD></TR>
+      <TR><TD PORT="med_order_discrete_disp_unit" COLSPAN="3" ALIGN="LEFT">med_order_discrete_disp_unit</TD></TR>
+      <TR><TD PORT="med_order_discrete_dose" COLSPAN="3" ALIGN="LEFT">med_order_discrete_dose</TD></TR>
+      <TR><TD PORT="med_order_discrete_dose_unit" COLSPAN="3" ALIGN="LEFT">med_order_discrete_dose_unit</TD></TR>
+      <TR><TD PORT="med_order_route" COLSPAN="3" ALIGN="LEFT">med_order_route</TD></TR>
+      <TR><TD PORT="med_order_qty" COLSPAN="3" ALIGN="LEFT">med_order_qty</TD></TR>
+      <TR><TD PORT="med_order_refills" COLSPAN="3" ALIGN="LEFT">med_order_refills</TD></TR>
+      <TR><TD PORT="med_order_refills_remaining" COLSPAN="3" ALIGN="LEFT">med_order_refills_remaining</TD></TR>
+      <TR><TD PORT="med_order_datetime" COLSPAN="3" ALIGN="LEFT">med_order_datetime</TD></TR>
+      <TR><TD PORT="med_order_start_datetime" COLSPAN="3" ALIGN="LEFT">med_order_start_datetime</TD></TR>
+      <TR><TD PORT="med_order_end_datetime" COLSPAN="3" ALIGN="LEFT">med_order_end_datetime</TD></TR>
+      <TR><TD PORT="med_order_discontinue_date" COLSPAN="3" ALIGN="LEFT">med_order_discontinue_date</TD></TR>
+      <TR><TD PORT="ambulatory_prescribed_y_n" COLSPAN="3" ALIGN="LEFT">ambulatory_prescribed_y_n</TD></TR>
+      <TR><TD PORT="historical_med_y_n" COLSPAN="3" ALIGN="LEFT">historical_med_y_n</TD></TR>
+      <TR><TD PORT="mar_action" COLSPAN="3" ALIGN="LEFT">mar_action</TD></TR>
+      <TR><TD PORT="taken_datetime" COLSPAN="3" ALIGN="LEFT">taken_datetime</TD></TR>
+      <TR><TD PORT="total_dose_character" COLSPAN="3" ALIGN="LEFT">total_dose_character</TD></TR>
+      <TR><TD PORT="med_dose_unit_desc" COLSPAN="3" ALIGN="LEFT">med_dose_unit_desc</TD></TR>
+      <TR><TD PORT="anes_ordered_med_y_n" COLSPAN="3" ALIGN="LEFT">anes_ordered_med_y_n</TD></TR>
+      <TR><TD PORT="med_duration_desc" COLSPAN="3" ALIGN="LEFT">med_duration_desc</TD></TR>
+      <TR><TD PORT="med_duration_unit_desc" COLSPAN="3" ALIGN="LEFT">med_duration_unit_desc</TD></TR>
+      <TR><TD PORT="med_infusion_rate" COLSPAN="3" ALIGN="LEFT">med_infusion_rate</TD></TR>
+      <TR><TD PORT="med_infusion_rate_unit_desc" COLSPAN="3" ALIGN="LEFT">med_infusion_rate_unit_desc</TD></TR>
+      <TR><TD PORT="med_generic_name_strength_concat" COLSPAN="3" ALIGN="LEFT">med_generic_name_strength_concat</TD></TR>
+      <TR><TD PORT="med_name_strength_concat" COLSPAN="3" ALIGN="LEFT">med_name_strength_concat</TD></TR>
+      <TR><TD PORT="med_therapy_class_concat" COLSPAN="3" ALIGN="LEFT">med_therapy_class_concat</TD></TR>
+      <TR><TD PORT="pharmacy_class_concat" COLSPAN="3" ALIGN="LEFT">pharmacy_class_concat</TD></TR>
+      <TR><TD PORT="pharmacy_subclass_concat" COLSPAN="3" ALIGN="LEFT">pharmacy_subclass_concat</TD></TR>
+      <TR><TD PORT="rxnorm_concat" COLSPAN="3" ALIGN="LEFT">rxnorm_concat</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2,191,333 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/meds.html"
+    tooltip="meds"
+  ];
+}

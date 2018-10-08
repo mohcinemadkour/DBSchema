@@ -1,0 +1,53 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "intake_outtake" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "intake_outtake" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">intake_outtake</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="anes_enc_y_n" COLSPAN="3" ALIGN="LEFT">anes_enc_y_n</TD></TR>
+      <TR><TD PORT="i_o_datetime" COLSPAN="3" ALIGN="LEFT">i_o_datetime</TD></TR>
+      <TR><TD PORT="autologous_volume_ml" COLSPAN="3" ALIGN="LEFT">autologous_volume_ml</TD></TR>
+      <TR><TD PORT="platelets_volume_ml" COLSPAN="3" ALIGN="LEFT">platelets_volume_ml</TD></TR>
+      <TR><TD PORT="emesis" COLSPAN="3" ALIGN="LEFT">emesis</TD></TR>
+      <TR><TD PORT="urine_output" COLSPAN="3" ALIGN="LEFT">urine_output</TD></TR>
+      <TR><TD PORT="ffp_volume_ml" COLSPAN="3" ALIGN="LEFT">ffp_volume_ml</TD></TR>
+      <TR><TD PORT="ffp_units" COLSPAN="3" ALIGN="LEFT">ffp_units</TD></TR>
+      <TR><TD PORT="prbc_units" COLSPAN="3" ALIGN="LEFT">prbc_units</TD></TR>
+      <TR><TD PORT="estimated_blood_loss_ml" COLSPAN="3" ALIGN="LEFT">estimated_blood_loss_ml</TD></TR>
+      <TR><TD PORT="csf_ventric_output" COLSPAN="3" ALIGN="LEFT">csf_ventric_output</TD></TR>
+      <TR><TD PORT="csf_lumbar_output" COLSPAN="3" ALIGN="LEFT">csf_lumbar_output</TD></TR>
+      <TR><TD PORT="nasogastric_tube_output" COLSPAN="3" ALIGN="LEFT">nasogastric_tube_output</TD></TR>
+      <TR><TD PORT="platelets" COLSPAN="3" ALIGN="LEFT">platelets</TD></TR>
+      <TR><TD PORT="other_io_product" COLSPAN="3" ALIGN="LEFT">other_io_product</TD></TR>
+      <TR><TD PORT="prbc_volume_ml" COLSPAN="3" ALIGN="LEFT">prbc_volume_ml</TD></TR>
+      <TR><TD PORT="chest_tube" COLSPAN="3" ALIGN="LEFT">chest_tube</TD></TR>
+      <TR><TD PORT="cellsaver" COLSPAN="3" ALIGN="LEFT">cellsaver</TD></TR>
+      <TR><TD PORT="cryoprecipitate_units" COLSPAN="3" ALIGN="LEFT">cryoprecipitate_units</TD></TR>
+      <TR><TD PORT="cryoprecipitate_volume_ml" COLSPAN="3" ALIGN="LEFT">cryoprecipitate_volume_ml</TD></TR>
+      <TR><TD PORT="albumin_volume_ml" COLSPAN="3" ALIGN="LEFT">albumin_volume_ml</TD></TR>
+      <TR><TD PORT="stool" COLSPAN="3" ALIGN="LEFT">stool</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1,632,104 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/intake_outtake.html"
+    tooltip="intake_outtake"
+  ];
+}

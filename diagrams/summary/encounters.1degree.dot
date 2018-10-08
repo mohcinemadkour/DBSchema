@@ -1,0 +1,119 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "encounters" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "encounters" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">encounters</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="index_encounter_y_n" COLSPAN="3" ALIGN="LEFT">index_encounter_y_n</TD></TR>
+      <TR><TD PORT="hospital" COLSPAN="3" ALIGN="LEFT">hospital</TD></TR>
+      <TR><TD PORT="encounter_effective_date" COLSPAN="3" ALIGN="LEFT">encounter_effective_date</TD></TR>
+      <TR><TD PORT="admit_datetime" COLSPAN="3" ALIGN="LEFT">admit_datetime</TD></TR>
+      <TR><TD PORT="admit_source" COLSPAN="3" ALIGN="LEFT">admit_source</TD></TR>
+      <TR><TD PORT="dischg_datetime" COLSPAN="3" ALIGN="LEFT">dischg_datetime</TD></TR>
+      <TR><TD PORT="sex" COLSPAN="3" ALIGN="LEFT">sex</TD></TR>
+      <TR><TD PORT="race" COLSPAN="3" ALIGN="LEFT">race</TD></TR>
+      <TR><TD PORT="ethnicity" COLSPAN="3" ALIGN="LEFT">ethnicity</TD></TR>
+      <TR><TD PORT="language" COLSPAN="3" ALIGN="LEFT">language</TD></TR>
+      <TR><TD PORT="city" COLSPAN="3" ALIGN="LEFT">city</TD></TR>
+      <TR><TD PORT="country" COLSPAN="3" ALIGN="LEFT">country</TD></TR>
+      <TR><TD PORT="zip" COLSPAN="3" ALIGN="LEFT">zip</TD></TR>
+      <TR><TD PORT="state" COLSPAN="3" ALIGN="LEFT">state</TD></TR>
+      <TR><TD PORT="county" COLSPAN="3" ALIGN="LEFT">county</TD></TR>
+      <TR><TD PORT="marital_status" COLSPAN="3" ALIGN="LEFT">marital_status</TD></TR>
+      <TR><TD PORT="ed_arrival_datetime" COLSPAN="3" ALIGN="LEFT">ed_arrival_datetime</TD></TR>
+      <TR><TD PORT="attending_dr_deiden_id" COLSPAN="3" ALIGN="LEFT">attending_dr_deiden_id</TD></TR>
+      <TR><TD PORT="referring_dr_deiden_id" COLSPAN="3" ALIGN="LEFT">referring_dr_deiden_id</TD></TR>
+      <TR><TD PORT="isdead_y_n" COLSPAN="3" ALIGN="LEFT">isdead_y_n</TD></TR>
+      <TR><TD PORT="encounter_type" COLSPAN="3" ALIGN="LEFT">encounter_type</TD></TR>
+      <TR><TD PORT="appointment_status" COLSPAN="3" ALIGN="LEFT">appointment_status</TD></TR>
+      <TR><TD PORT="patient_type" COLSPAN="3" ALIGN="LEFT">patient_type</TD></TR>
+      <TR><TD PORT="hosp_svc_dept" COLSPAN="3" ALIGN="LEFT">hosp_svc_dept</TD></TR>
+      <TR><TD PORT="hosp_svc_desc" COLSPAN="3" ALIGN="LEFT">hosp_svc_desc</TD></TR>
+      <TR><TD PORT="location_of_svc" COLSPAN="3" ALIGN="LEFT">location_of_svc</TD></TR>
+      <TR><TD PORT="external_name" COLSPAN="3" ALIGN="LEFT">external_name</TD></TR>
+      <TR><TD PORT="birth_date" COLSPAN="3" ALIGN="LEFT">birth_date</TD></TR>
+      <TR><TD PORT="payer" COLSPAN="3" ALIGN="LEFT">payer</TD></TR>
+      <TR><TD PORT="icd9_admit_diagnosis" COLSPAN="3" ALIGN="LEFT">icd9_admit_diagnosis</TD></TR>
+      <TR><TD PORT="icd9_admit_diagnosis_desc" COLSPAN="3" ALIGN="LEFT">icd9_admit_diagnosis_desc</TD></TR>
+      <TR><TD PORT="icd9_admit_diagnosis_group" COLSPAN="3" ALIGN="LEFT">icd9_admit_diagnosis_group</TD></TR>
+      <TR><TD PORT="icd10_admit_diagnosis" COLSPAN="3" ALIGN="LEFT">icd10_admit_diagnosis</TD></TR>
+      <TR><TD PORT="icd10_admit_diagnosis_desc" COLSPAN="3" ALIGN="LEFT">icd10_admit_diagnosis_desc</TD></TR>
+      <TR><TD PORT="icd10_admit_diagnosis_group" COLSPAN="3" ALIGN="LEFT">icd10_admit_diagnosis_group</TD></TR>
+      <TR><TD PORT="admit_priority" COLSPAN="3" ALIGN="LEFT">admit_priority</TD></TR>
+      <TR><TD PORT="seen_in_ed_y_n" COLSPAN="3" ALIGN="LEFT">seen_in_ed_y_n</TD></TR>
+      <TR><TD PORT="seen_in_or_y_n" COLSPAN="3" ALIGN="LEFT">seen_in_or_y_n</TD></TR>
+      <TR><TD PORT="dischg_disposition" COLSPAN="3" ALIGN="LEFT">dischg_disposition</TD></TR>
+      <TR><TD PORT="dischg_svc_dept_ip_obs" COLSPAN="3" ALIGN="LEFT">dischg_svc_dept_ip_obs</TD></TR>
+      <TR><TD PORT="dischg_svc_desc_ip_obs" COLSPAN="3" ALIGN="LEFT">dischg_svc_desc_ip_obs</TD></TR>
+      <TR><TD PORT="death_indicator" COLSPAN="3" ALIGN="LEFT">death_indicator</TD></TR>
+      <TR><TD PORT="ssdi_death_indicator" COLSPAN="3" ALIGN="LEFT">ssdi_death_indicator</TD></TR>
+      <TR><TD PORT="death_date" COLSPAN="3" ALIGN="LEFT">death_date</TD></TR>
+      <TR><TD PORT="aids" COLSPAN="3" ALIGN="LEFT">aids</TD></TR>
+      <TR><TD PORT="cancer" COLSPAN="3" ALIGN="LEFT">cancer</TD></TR>
+      <TR><TD PORT="cerebrovascular_disease" COLSPAN="3" ALIGN="LEFT">cerebrovascular_disease</TD></TR>
+      <TR><TD PORT="chf" COLSPAN="3" ALIGN="LEFT">chf</TD></TR>
+      <TR><TD PORT="copd" COLSPAN="3" ALIGN="LEFT">copd</TD></TR>
+      <TR><TD PORT="dementia" COLSPAN="3" ALIGN="LEFT">dementia</TD></TR>
+      <TR><TD PORT="diabetes_w_o_complications" COLSPAN="3" ALIGN="LEFT">diabetes_w_o_complications</TD></TR>
+      <TR><TD PORT="diabetes_w_complications" COLSPAN="3" ALIGN="LEFT">diabetes_w_complications</TD></TR>
+      <TR><TD PORT="m_i" COLSPAN="3" ALIGN="LEFT">m_i</TD></TR>
+      <TR><TD PORT="metastatic_carcinoma" COLSPAN="3" ALIGN="LEFT">metastatic_carcinoma</TD></TR>
+      <TR><TD PORT="mild_liver_disease" COLSPAN="3" ALIGN="LEFT">mild_liver_disease</TD></TR>
+      <TR><TD PORT="moderate_severe_liver_disease" COLSPAN="3" ALIGN="LEFT">moderate_severe_liver_disease</TD></TR>
+      <TR><TD PORT="paraplegia_hemiplegia" COLSPAN="3" ALIGN="LEFT">paraplegia_hemiplegia</TD></TR>
+      <TR><TD PORT="peptic_ulcer_disease" COLSPAN="3" ALIGN="LEFT">peptic_ulcer_disease</TD></TR>
+      <TR><TD PORT="peripheral_vascular_disease" COLSPAN="3" ALIGN="LEFT">peripheral_vascular_disease</TD></TR>
+      <TR><TD PORT="renal_disease" COLSPAN="3" ALIGN="LEFT">renal_disease</TD></TR>
+      <TR><TD PORT="rheumatologic_disease" COLSPAN="3" ALIGN="LEFT">rheumatologic_disease</TD></TR>
+      <TR><TD PORT="aids_poa" COLSPAN="3" ALIGN="LEFT">aids_poa</TD></TR>
+      <TR><TD PORT="cancer_poa" COLSPAN="3" ALIGN="LEFT">cancer_poa</TD></TR>
+      <TR><TD PORT="cerebrovascular_poa" COLSPAN="3" ALIGN="LEFT">cerebrovascular_poa</TD></TR>
+      <TR><TD PORT="chf_poa" COLSPAN="3" ALIGN="LEFT">chf_poa</TD></TR>
+      <TR><TD PORT="copd_poa" COLSPAN="3" ALIGN="LEFT">copd_poa</TD></TR>
+      <TR><TD PORT="dementia_poa" COLSPAN="3" ALIGN="LEFT">dementia_poa</TD></TR>
+      <TR><TD PORT="diabetes_w_o_complications_poa" COLSPAN="3" ALIGN="LEFT">diabetes_w_o_complications_poa</TD></TR>
+      <TR><TD PORT="diabetes_w_complications_poa" COLSPAN="3" ALIGN="LEFT">diabetes_w_complications_poa</TD></TR>
+      <TR><TD PORT="m_i_poa" COLSPAN="3" ALIGN="LEFT">m_i_poa</TD></TR>
+      <TR><TD PORT="metastatic_carcinoma_poa" COLSPAN="3" ALIGN="LEFT">metastatic_carcinoma_poa</TD></TR>
+      <TR><TD PORT="mild_liver_disease_poa" COLSPAN="3" ALIGN="LEFT">mild_liver_disease_poa</TD></TR>
+      <TR><TD PORT="moderate_severe_liver_disease_poa" COLSPAN="3" ALIGN="LEFT">moderate_severe_liver_disease_poa</TD></TR>
+      <TR><TD PORT="paraplegia_hemiplegia_poa" COLSPAN="3" ALIGN="LEFT">paraplegia_hemiplegia_poa</TD></TR>
+      <TR><TD PORT="peptic_ulcer_disease_poa" COLSPAN="3" ALIGN="LEFT">peptic_ulcer_disease_poa</TD></TR>
+      <TR><TD PORT="peripheral_vascular_disease_poa" COLSPAN="3" ALIGN="LEFT">peripheral_vascular_disease_poa</TD></TR>
+      <TR><TD PORT="renal_disease_poa" COLSPAN="3" ALIGN="LEFT">renal_disease_poa</TD></TR>
+      <TR><TD PORT="rheumatologic_poa" COLSPAN="3" ALIGN="LEFT">rheumatologic_poa</TD></TR>
+      <TR><TD PORT="charlson_comorbidity_total_score" COLSPAN="3" ALIGN="LEFT">charlson_comorbidity_total_score</TD></TR>
+      <TR><TD PORT="height_cm" COLSPAN="3" ALIGN="LEFT">height_cm</TD></TR>
+      <TR><TD PORT="weight_kgs" COLSPAN="3" ALIGN="LEFT">weight_kgs</TD></TR>
+      <TR><TD PORT="ssdi_death_date" COLSPAN="3" ALIGN="LEFT">ssdi_death_date</TD></TR>
+      <TR><TD PORT="smoking_status" COLSPAN="3" ALIGN="LEFT">smoking_status</TD></TR>
+      <TR><TD PORT="ip_obs_admit_datetime" COLSPAN="3" ALIGN="LEFT">ip_obs_admit_datetime</TD></TR>
+      <TR><TD PORT="ip_obs_dischg_datetime" COLSPAN="3" ALIGN="LEFT">ip_obs_dischg_datetime</TD></TR>
+      <TR><TD PORT="admit_datetime_from_billing" COLSPAN="3" ALIGN="LEFT">admit_datetime_from_billing</TD></TR>
+      <TR><TD PORT="dischg_datetime_from_billing" COLSPAN="3" ALIGN="LEFT">dischg_datetime_from_billing</TD></TR>
+      <TR><TD PORT="ed_dischg_datetime" COLSPAN="3" ALIGN="LEFT">ed_dischg_datetime</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">972,128 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/encounters.html"
+    tooltip="encounters"
+  ];
+}

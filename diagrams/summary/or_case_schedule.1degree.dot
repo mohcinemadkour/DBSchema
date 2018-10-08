@@ -1,0 +1,146 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "or_case_schedule" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "or_case_schedule" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">or_case_schedule</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="case_status" COLSPAN="3" ALIGN="LEFT">case_status</TD></TR>
+      <TR><TD PORT="case_class" COLSPAN="3" ALIGN="LEFT">case_class</TD></TR>
+      <TR><TD PORT="sched_location" COLSPAN="3" ALIGN="LEFT">sched_location</TD></TR>
+      <TR><TD PORT="sched_north_south" COLSPAN="3" ALIGN="LEFT">sched_north_south</TD></TR>
+      <TR><TD PORT="sched_site" COLSPAN="3" ALIGN="LEFT">sched_site</TD></TR>
+      <TR><TD PORT="sched_site_description" COLSPAN="3" ALIGN="LEFT">sched_site_description</TD></TR>
+      <TR><TD PORT="sched_service" COLSPAN="3" ALIGN="LEFT">sched_service</TD></TR>
+      <TR><TD PORT="sched_room" COLSPAN="3" ALIGN="LEFT">sched_room</TD></TR>
+      <TR><TD PORT="sched_room_type" COLSPAN="3" ALIGN="LEFT">sched_room_type</TD></TR>
+      <TR><TD PORT="sched_trauma_room_y_n" COLSPAN="3" ALIGN="LEFT">sched_trauma_room_y_n</TD></TR>
+      <TR><TD PORT="sched_surg_service" COLSPAN="3" ALIGN="LEFT">sched_surg_service</TD></TR>
+      <TR><TD PORT="sched_patient_class_code" COLSPAN="3" ALIGN="LEFT">sched_patient_class_code</TD></TR>
+      <TR><TD PORT="sched_anesthesia_type" COLSPAN="3" ALIGN="LEFT">sched_anesthesia_type</TD></TR>
+      <TR><TD PORT="sched_post_op_location" COLSPAN="3" ALIGN="LEFT">sched_post_op_location</TD></TR>
+      <TR><TD PORT="sched_case_date" COLSPAN="3" ALIGN="LEFT">sched_case_date</TD></TR>
+      <TR><TD PORT="sched_start_datetime" COLSPAN="3" ALIGN="LEFT">sched_start_datetime</TD></TR>
+      <TR><TD PORT="sched_start_time_char" COLSPAN="3" ALIGN="LEFT">sched_start_time_char</TD></TR>
+      <TR><TD PORT="sched_stop_time_char" COLSPAN="3" ALIGN="LEFT">sched_stop_time_char</TD></TR>
+      <TR><TD PORT="sched_base_procedure_1" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_1</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_1" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_1</TD></TR>
+      <TR><TD PORT="sched_cpt_1" COLSPAN="3" ALIGN="LEFT">sched_cpt_1</TD></TR>
+      <TR><TD PORT="sched_cpt_1_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_1_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_2" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_2</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_2" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_2</TD></TR>
+      <TR><TD PORT="sched_cpt_2" COLSPAN="3" ALIGN="LEFT">sched_cpt_2</TD></TR>
+      <TR><TD PORT="sched_cpt_2_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_2_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_3" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_3</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_3" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_3</TD></TR>
+      <TR><TD PORT="sched_cpt_3" COLSPAN="3" ALIGN="LEFT">sched_cpt_3</TD></TR>
+      <TR><TD PORT="sched_cpt_3_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_3_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_4" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_4</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_4" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_4</TD></TR>
+      <TR><TD PORT="sched_cpt_4" COLSPAN="3" ALIGN="LEFT">sched_cpt_4</TD></TR>
+      <TR><TD PORT="sched_cpt_4_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_4_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_5" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_5</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_5" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_5</TD></TR>
+      <TR><TD PORT="sched_cpt_5" COLSPAN="3" ALIGN="LEFT">sched_cpt_5</TD></TR>
+      <TR><TD PORT="sched_cpt_5_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_5_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_6" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_6</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_6" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_6</TD></TR>
+      <TR><TD PORT="sched_cpt_6" COLSPAN="3" ALIGN="LEFT">sched_cpt_6</TD></TR>
+      <TR><TD PORT="sched_cpt_6_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_6_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_7" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_7</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_7" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_7</TD></TR>
+      <TR><TD PORT="sched_cpt_7" COLSPAN="3" ALIGN="LEFT">sched_cpt_7</TD></TR>
+      <TR><TD PORT="sched_cpt_7_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_7_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_8" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_8</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_8" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_8</TD></TR>
+      <TR><TD PORT="sched_cpt_8" COLSPAN="3" ALIGN="LEFT">sched_cpt_8</TD></TR>
+      <TR><TD PORT="sched_cpt_8_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_8_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_9" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_9</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_9" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_9</TD></TR>
+      <TR><TD PORT="sched_cpt_9" COLSPAN="3" ALIGN="LEFT">sched_cpt_9</TD></TR>
+      <TR><TD PORT="sched_cpt_9_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_9_description</TD></TR>
+      <TR><TD PORT="sched_base_procedure_10" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_10</TD></TR>
+      <TR><TD PORT="sched_base_procedure_code_10" COLSPAN="3" ALIGN="LEFT">sched_base_procedure_code_10</TD></TR>
+      <TR><TD PORT="sched_cpt_10" COLSPAN="3" ALIGN="LEFT">sched_cpt_10</TD></TR>
+      <TR><TD PORT="sched_cpt_10_description" COLSPAN="3" ALIGN="LEFT">sched_cpt_10_description</TD></TR>
+      <TR><TD PORT="room_start_datetime" COLSPAN="3" ALIGN="LEFT">room_start_datetime</TD></TR>
+      <TR><TD PORT="room_end_datetime" COLSPAN="3" ALIGN="LEFT">room_end_datetime</TD></TR>
+      <TR><TD PORT="incision_datetime" COLSPAN="3" ALIGN="LEFT">incision_datetime</TD></TR>
+      <TR><TD PORT="dressing_datetime" COLSPAN="3" ALIGN="LEFT">dressing_datetime</TD></TR>
+      <TR><TD PORT="anesthesia_start_datetime" COLSPAN="3" ALIGN="LEFT">anesthesia_start_datetime</TD></TR>
+      <TR><TD PORT="anesthesia_stop_datetime" COLSPAN="3" ALIGN="LEFT">anesthesia_stop_datetime</TD></TR>
+      <TR><TD PORT="base_procedure_1" COLSPAN="3" ALIGN="LEFT">base_procedure_1</TD></TR>
+      <TR><TD PORT="base_procedure_code_1" COLSPAN="3" ALIGN="LEFT">base_procedure_code_1</TD></TR>
+      <TR><TD PORT="cpt_1" COLSPAN="3" ALIGN="LEFT">cpt_1</TD></TR>
+      <TR><TD PORT="cpt_1_description" COLSPAN="3" ALIGN="LEFT">cpt_1_description</TD></TR>
+      <TR><TD PORT="base_procedure_2" COLSPAN="3" ALIGN="LEFT">base_procedure_2</TD></TR>
+      <TR><TD PORT="base_procedure_code_2" COLSPAN="3" ALIGN="LEFT">base_procedure_code_2</TD></TR>
+      <TR><TD PORT="cpt_2" COLSPAN="3" ALIGN="LEFT">cpt_2</TD></TR>
+      <TR><TD PORT="cpt_2_description" COLSPAN="3" ALIGN="LEFT">cpt_2_description</TD></TR>
+      <TR><TD PORT="base_procedure_3" COLSPAN="3" ALIGN="LEFT">base_procedure_3</TD></TR>
+      <TR><TD PORT="base_procedure_code_3" COLSPAN="3" ALIGN="LEFT">base_procedure_code_3</TD></TR>
+      <TR><TD PORT="cpt_3" COLSPAN="3" ALIGN="LEFT">cpt_3</TD></TR>
+      <TR><TD PORT="cpt_3_description" COLSPAN="3" ALIGN="LEFT">cpt_3_description</TD></TR>
+      <TR><TD PORT="base_procedure_4" COLSPAN="3" ALIGN="LEFT">base_procedure_4</TD></TR>
+      <TR><TD PORT="base_procedure_code_4" COLSPAN="3" ALIGN="LEFT">base_procedure_code_4</TD></TR>
+      <TR><TD PORT="cpt_4" COLSPAN="3" ALIGN="LEFT">cpt_4</TD></TR>
+      <TR><TD PORT="cpt_4_description" COLSPAN="3" ALIGN="LEFT">cpt_4_description</TD></TR>
+      <TR><TD PORT="base_procedure_5" COLSPAN="3" ALIGN="LEFT">base_procedure_5</TD></TR>
+      <TR><TD PORT="base_procedure_code_5" COLSPAN="3" ALIGN="LEFT">base_procedure_code_5</TD></TR>
+      <TR><TD PORT="cpt_5" COLSPAN="3" ALIGN="LEFT">cpt_5</TD></TR>
+      <TR><TD PORT="cpt_5_description" COLSPAN="3" ALIGN="LEFT">cpt_5_description</TD></TR>
+      <TR><TD PORT="base_procedure_6" COLSPAN="3" ALIGN="LEFT">base_procedure_6</TD></TR>
+      <TR><TD PORT="base_procedure_code_6" COLSPAN="3" ALIGN="LEFT">base_procedure_code_6</TD></TR>
+      <TR><TD PORT="cpt_6" COLSPAN="3" ALIGN="LEFT">cpt_6</TD></TR>
+      <TR><TD PORT="cpt_6_description" COLSPAN="3" ALIGN="LEFT">cpt_6_description</TD></TR>
+      <TR><TD PORT="base_procedure_7" COLSPAN="3" ALIGN="LEFT">base_procedure_7</TD></TR>
+      <TR><TD PORT="base_procedure_code_7" COLSPAN="3" ALIGN="LEFT">base_procedure_code_7</TD></TR>
+      <TR><TD PORT="cpt_7" COLSPAN="3" ALIGN="LEFT">cpt_7</TD></TR>
+      <TR><TD PORT="cpt_7_description" COLSPAN="3" ALIGN="LEFT">cpt_7_description</TD></TR>
+      <TR><TD PORT="base_procedure_8" COLSPAN="3" ALIGN="LEFT">base_procedure_8</TD></TR>
+      <TR><TD PORT="base_procedure_code_8" COLSPAN="3" ALIGN="LEFT">base_procedure_code_8</TD></TR>
+      <TR><TD PORT="cpt_8" COLSPAN="3" ALIGN="LEFT">cpt_8</TD></TR>
+      <TR><TD PORT="cpt_8_description" COLSPAN="3" ALIGN="LEFT">cpt_8_description</TD></TR>
+      <TR><TD PORT="base_procedure_9" COLSPAN="3" ALIGN="LEFT">base_procedure_9</TD></TR>
+      <TR><TD PORT="base_procedure_code_9" COLSPAN="3" ALIGN="LEFT">base_procedure_code_9</TD></TR>
+      <TR><TD PORT="cpt_9" COLSPAN="3" ALIGN="LEFT">cpt_9</TD></TR>
+      <TR><TD PORT="cpt_9_description" COLSPAN="3" ALIGN="LEFT">cpt_9_description</TD></TR>
+      <TR><TD PORT="base_procedure_10" COLSPAN="3" ALIGN="LEFT">base_procedure_10</TD></TR>
+      <TR><TD PORT="base_procedure_code_10" COLSPAN="3" ALIGN="LEFT">base_procedure_code_10</TD></TR>
+      <TR><TD PORT="cpt_10" COLSPAN="3" ALIGN="LEFT">cpt_10</TD></TR>
+      <TR><TD PORT="cpt_10_description" COLSPAN="3" ALIGN="LEFT">cpt_10_description</TD></TR>
+      <TR><TD PORT="service" COLSPAN="3" ALIGN="LEFT">service</TD></TR>
+      <TR><TD PORT="surgery_type" COLSPAN="3" ALIGN="LEFT">surgery_type</TD></TR>
+      <TR><TD PORT="location" COLSPAN="3" ALIGN="LEFT">location</TD></TR>
+      <TR><TD PORT="site" COLSPAN="3" ALIGN="LEFT">site</TD></TR>
+      <TR><TD PORT="site_description" COLSPAN="3" ALIGN="LEFT">site_description</TD></TR>
+      <TR><TD PORT="room_type" COLSPAN="3" ALIGN="LEFT">room_type</TD></TR>
+      <TR><TD PORT="nora_yn" COLSPAN="3" ALIGN="LEFT">nora_yn</TD></TR>
+      <TR><TD PORT="gi_room_yn" COLSPAN="3" ALIGN="LEFT">gi_room_yn</TD></TR>
+      <TR><TD PORT="sched_surgeon_deiden_id" COLSPAN="3" ALIGN="LEFT">sched_surgeon_deiden_id</TD></TR>
+      <TR><TD PORT="main_surgeon_deiden_id" COLSPAN="3" ALIGN="LEFT">main_surgeon_deiden_id</TD></TR>
+      <TR><TD PORT="main_anesthesiologist_deiden_id" COLSPAN="3" ALIGN="LEFT">main_anesthesiologist_deiden_id</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">42,443 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/or_case_schedule.html"
+    tooltip="or_case_schedule"
+  ];
+}

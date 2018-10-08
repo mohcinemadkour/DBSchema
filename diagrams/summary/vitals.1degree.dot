@@ -1,0 +1,38 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "vitals" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "vitals" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">vitals</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="anes_enc_y_n" COLSPAN="3" ALIGN="LEFT">anes_enc_y_n</TD></TR>
+      <TR><TD PORT="vitals_datetime" COLSPAN="3" ALIGN="LEFT">vitals_datetime</TD></TR>
+      <TR><TD PORT="heart_rate" COLSPAN="3" ALIGN="LEFT">heart_rate</TD></TR>
+      <TR><TD PORT="heart_rate_source" COLSPAN="3" ALIGN="LEFT">heart_rate_source</TD></TR>
+      <TR><TD PORT="temp_farenheit" COLSPAN="3" ALIGN="LEFT">temp_farenheit</TD></TR>
+      <TR><TD PORT="temp_celsius" COLSPAN="3" ALIGN="LEFT">temp_celsius</TD></TR>
+      <TR><TD PORT="temp_source" COLSPAN="3" ALIGN="LEFT">temp_source</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">14,737,049 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/vitals.html"
+    tooltip="vitals"
+  ];
+}

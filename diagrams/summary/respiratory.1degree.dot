@@ -1,0 +1,52 @@
+// dot 2.38.0 on Linux 4.15.0-34-generic
+// SchemaSpy rev 590
+digraph "respiratory" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "respiratory" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">respiratory</TD></TR>
+      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
+      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="anes_enc_y_n" COLSPAN="3" ALIGN="LEFT">anes_enc_y_n</TD></TR>
+      <TR><TD PORT="respiratory_datetime" COLSPAN="3" ALIGN="LEFT">respiratory_datetime</TD></TR>
+      <TR><TD PORT="respiratory_device" COLSPAN="3" ALIGN="LEFT">respiratory_device</TD></TR>
+      <TR><TD PORT="spo2" COLSPAN="3" ALIGN="LEFT">spo2</TD></TR>
+      <TR><TD PORT="fio2" COLSPAN="3" ALIGN="LEFT">fio2</TD></TR>
+      <TR><TD PORT="etco2" COLSPAN="3" ALIGN="LEFT">etco2</TD></TR>
+      <TR><TD PORT="etco2_oral_nasal" COLSPAN="3" ALIGN="LEFT">etco2_oral_nasal</TD></TR>
+      <TR><TD PORT="o2_l_min" COLSPAN="3" ALIGN="LEFT">o2_l_min</TD></TR>
+      <TR><TD PORT="o2_ml_min" COLSPAN="3" ALIGN="LEFT">o2_ml_min</TD></TR>
+      <TR><TD PORT="peep" COLSPAN="3" ALIGN="LEFT">peep</TD></TR>
+      <TR><TD PORT="tidal_volume" COLSPAN="3" ALIGN="LEFT">tidal_volume</TD></TR>
+      <TR><TD PORT="adult_mech_resp_rate" COLSPAN="3" ALIGN="LEFT">adult_mech_resp_rate</TD></TR>
+      <TR><TD PORT="adult_spont_resp_rate" COLSPAN="3" ALIGN="LEFT">adult_spont_resp_rate</TD></TR>
+      <TR><TD PORT="adult_vent_mode" COLSPAN="3" ALIGN="LEFT">adult_vent_mode</TD></TR>
+      <TR><TD PORT="adult_vent_start_time" COLSPAN="3" ALIGN="LEFT">adult_vent_start_time</TD></TR>
+      <TR><TD PORT="adult_vent_end_time" COLSPAN="3" ALIGN="LEFT">adult_vent_end_time</TD></TR>
+      <TR><TD PORT="respiratory_rate" COLSPAN="3" ALIGN="LEFT">respiratory_rate</TD></TR>
+      <TR><TD PORT="pip" COLSPAN="3" ALIGN="LEFT">pip</TD></TR>
+      <TR><TD PORT="rso2_baseline_left" COLSPAN="3" ALIGN="LEFT">rso2_baseline_left</TD></TR>
+      <TR><TD PORT="rso2_baseline_right" COLSPAN="3" ALIGN="LEFT">rso2_baseline_right</TD></TR>
+      <TR><TD PORT="tidal_volume_exhaled" COLSPAN="3" ALIGN="LEFT">tidal_volume_exhaled</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">11,287,695 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/respiratory.html"
+    tooltip="respiratory"
+  ];
+}
