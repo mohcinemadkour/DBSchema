@@ -24,7 +24,7 @@ glasgow
 encounters
 education
 ecg_cardiology_detail
-dialysis_sorted
+dialysis
 diagnoses
 crrt
 cam

@@ -4,7 +4,7 @@ braden
 cam
 crrt
 diagnoses
-dialysis_sorted
+dialysis
 ecg_cardiology_detail
 education
 encounters

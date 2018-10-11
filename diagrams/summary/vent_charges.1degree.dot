@@ -21,8 +21,8 @@ digraph "vent_charges" {
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">vent_charges</TD></TR>
-      <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
-      <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
+      <TR><TD PORT="Patient_Deiden_id" COLSPAN="3" ALIGN="LEFT">Patient_Deiden_id</TD></TR>
+      <TR><TD PORT="Encounter_Deiden_id" COLSPAN="3" ALIGN="LEFT">Encounter_Deiden_id</TD></TR>
       <TR><TD PORT="Svc_Date" COLSPAN="3" ALIGN="LEFT">Svc_Date</TD></TR>
       <TR><TD PORT="Charge_Code" COLSPAN="3" ALIGN="LEFT">Charge_Code</TD></TR>
       <TR><TD PORT="Charge_Code_Desc" COLSPAN="3" ALIGN="LEFT">Charge_Code_Desc</TD></TR>

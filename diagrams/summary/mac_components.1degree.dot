@@ -22,11 +22,11 @@ digraph "mac_components" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">mac_components</TD></TR>
       <TR><TD PORT="patient_deiden_id" COLSPAN="3" ALIGN="LEFT">patient_deiden_id</TD></TR>
-      <TR><TD PORT="recorded_time" COLSPAN="3" ALIGN="LEFT">recorded_time</TD></TR>
-      <TR><TD PORT="disp_name" COLSPAN="3" ALIGN="LEFT">disp_name</TD></TR>
-      <TR><TD PORT="meas_value" COLSPAN="3" ALIGN="LEFT">meas_value</TD></TR>
+      <TR><TD PORT="RECORDED_TIME" COLSPAN="3" ALIGN="LEFT">RECORDED_TIME</TD></TR>
+      <TR><TD PORT="DISP_NAME" COLSPAN="3" ALIGN="LEFT">DISP_NAME</TD></TR>
+      <TR><TD PORT="MEAS_VALUE" COLSPAN="3" ALIGN="LEFT">MEAS_VALUE</TD></TR>
       <TR><TD PORT="encounter_deiden_id" COLSPAN="3" ALIGN="LEFT">encounter_deiden_id</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1,046,355 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1,012,174 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/mac_components.html"
     tooltip="mac_components"

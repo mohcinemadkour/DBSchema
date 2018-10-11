@@ -1,604 +1,604 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <database name="prismap_idealist_t" type="MySQL - 8.0.11-commercial">
    <tables>
-      <table name="anesthesia" numRows="2754775" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="anesthesia_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="bis_index" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="anesthesia" numRows="2754775" remarks="Contains the bispectral index information for patients" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="anesthesia_datetime" nullable="true" remarks="Anesthesia Encountered DateTime" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="bis_index" nullable="true" remarks="Bispectral Index" size="257" type="VARCHAR"/>
       </table>
-      <table name="asa_scores" numRows="32907" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="case_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="asa_score" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="asa_scores" numRows="32907" remarks="Contains results of American Society of Anesthesiologists (ASA) assessment for patient’s physical status" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number ." size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter (CSN) Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="case_date" nullable="true" remarks="Assessment of Patient's Physical Status Assessed Date" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="asa_score" nullable="true" remarks="Assessment of Patient's Physical Status" size="257" type="VARCHAR"/>
       </table>
-      <table name="braden" numRows="764490" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="braden_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="braden" numRows="764490" remarks="Contains patient information of Braden scale which is a special scoring system to evaluate a patient’s risk of developing a pressure ulcer" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator if data occurred between anesthesia start/stop times" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="braden_datetime" nullable="true" remarks="Braden Scale Score Recorded DateTime" size="257" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="4" name="braden_sensory_perception" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="braden_moisture" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="braden_activity" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="braden_mobility" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="braden_nutrition" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="braden_friction_shear" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="braden_score" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="braden_moisture" nullable="true" remarks="Braden Moisture Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="braden_activity" nullable="true" remarks="Braden Moisture Score" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="braden_mobility" nullable="true" remarks="Braden Mobility Score" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="braden_nutrition" nullable="true" remarks="Braden Nutrition Score" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="braden_friction_shear" nullable="true" remarks="Braden Friction &amp; Shear Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="braden_score" nullable="true" remarks="Final Braden Score" size="256" type="VARCHAR"/>
       </table>
-      <table name="cam" numRows="119178" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="vital_sign_measure_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="meas_value" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="cam" numRows="119178" remarks="Contains results of Confusion Assessment Method (CAM)" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="Confusion Assessment Method Result Recorded DateTime" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="vital_sign_measure_name" nullable="true" remarks="Vital Sign Measure Name" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="meas_value" nullable="true" remarks="Confusion Assessment Method Result" size="258" type="VARCHAR"/>
       </table>
-      <table name="crrt" numRows="705872" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="vital_sign_group_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="vital_sign_measure_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="meas_value" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="crrt" numRows="705872" remarks="Contains data related to the Continuous Renal Replacement Therapy (CRRT)" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="Vital Sign Recorded DateTime" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="vital_sign_group_name" nullable="true" remarks="Vital Sign Group Name" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="vital_sign_measure_name" nullable="true" remarks="Vital Sign Measure Name" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="meas_value" nullable="true" remarks="Vital Sign Value" size="258" type="VARCHAR"/>
       </table>
-      <table name="diagnoses" numRows="5015175" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="diag_icd_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="diag_code" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="diagnoses" numRows="5015175" remarks="Contains the patient diagnoses codes" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="diag_icd_type" nullable="true" remarks="Diagnosis Code Type" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="diag_code" nullable="true" remarks="Diagnosis Code" size="257" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="4" name="diag_hierarchy" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="5" name="start_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="start_date" nullable="true" remarks="Start Date" size="258" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="6" name="end_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="flag_poa_clinically_undetermined" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="flag_poa_exempt" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="flag_poa_no" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="flag_poa_yes" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="flag_priority_primary" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="flag_priority_secondary" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="flag_priority_unable_to_classify" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="flag_source_encounter" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="flag_problem_list_active" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="flag_problem_list_resolved" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="flag_source_pro_billing" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="flag_source_him_coding" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="flag_source_simple_visit_coding" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="flag_poa_clinically_undetermined" nullable="true" remarks="Indicator of Clinically Undermined Presented on Admission" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="flag_poa_exempt" nullable="true" remarks="Indicator of Exempt from Present on Admission Reporting" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="flag_poa_no" nullable="true" remarks="Indicator of Not Presented at Inpatient Admission" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="flag_poa_yes" nullable="true" remarks="VIndicator of Presented at Inpatient Admission" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="flag_priority_primary" nullable="true" remarks="Indicator of Primary Priority of Diagnosis" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="flag_priority_secondary" nullable="true" remarks="Indicator of Secondary Priority of Diagnosis" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="13" name="flag_priority_unable_to_classify" nullable="true" remarks="Indicator of Unable to Classify Priority of Diagnosis" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="flag_source_encounter" nullable="true" remarks="Indicator of Source Encounter Available" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="flag_problem_list_active" nullable="true" remarks="Indicator of Active Problem List" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="flag_problem_list_resolved" nullable="true" remarks="Indicator of Resolved Problem List" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="flag_source_pro_billing" nullable="true" remarks="Indicator of Source Pro Billing Available" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="flag_source_him_coding" nullable="true" remarks="Indicator of Source Him Coding Available" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="19" name="flag_source_simple_visit_coding" nullable="true" remarks="Indicator of Source Simple Visit Coding Available" size="255" type="VARCHAR"/>
       </table>
-      <table name="dialysis_sorted" numRows="68888" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="observation_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="hemodialysis_intake" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="hemodialysis_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="dialysis" numRows="68888" remarks="Contains dialysis related data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="observation_datetime" nullable="true" remarks="Dialysis Received DateTime" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="hemodialysis_intake" nullable="true" remarks="Hemodialysis Intake" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="hemodialysis_output" nullable="true" remarks="Hemodialysis Output" size="258" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="6" name="hemodialysis_net_io" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="peritoneal_dialysis_intake" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="peritoneal_dialysis_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="peritoneal_dialysis_output_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="peritoneal_dialysis_initial_drain_volume" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="peritoneal_dialysis_intake" nullable="true" remarks="Peritoneal Dialysis Intake" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="peritoneal_dialysis_output" nullable="true" remarks="Peritoneal Dialysis Output" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="peritoneal_dialysis_output_status" nullable="true" remarks="Peritoneal Dialysis Output Status" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="peritoneal_dialysis_initial_drain_volume" nullable="true" remarks="Peritoneal Dialysis Initial Drain Volume" size="258" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="11" name="crrt_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
       </table>
-      <table name="ecg_cardiology_detail" numRows="49326" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="ecg_acq_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="ecg_acq_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="ecg_patient_age" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="heart_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="ecg_cardiology_detail" numRows="49326" remarks="Contains Electrocardiogram (ECG) details." type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="10" type="INT"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="ecg_acq_date" nullable="true" remarks="Electrocardiogram Acquisation Date" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="ecg_acq_time" nullable="true" remarks="Electrocardiogram Acquisation  Time" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="ecg_patient_age" nullable="true" remarks="Electrocardiogram Patient Age" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="heart_rate" nullable="true" remarks="Heart Rate ( Beats per Minute)" size="258" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="6" name="i40_frontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="i40_horizontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="pr_interval" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="p_frontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="p_horizontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="qrs_duration" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="qrs_frontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="qrs_horizontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="qtcb" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="qt_interval" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="st_frontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="i40_horizontal_axis" nullable="true" remarks="Initial 40-ms Horizontal Axis" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="pr_interval" nullable="true" remarks="PR Interval (in milliseconds)" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="p_frontal_axis" nullable="true" remarks="P-wave Frontal Axis" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="p_horizontal_axis" nullable="true" remarks="P-wave Horizontal Axis" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="qrs_duration" nullable="true" remarks="QRS Complex Duration (in milliseconds)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="qrs_frontal_axis" nullable="true" remarks="QRS Complex Frontal Axis" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="qrs_horizontal_axis" nullable="true" remarks="QRS Complex Horizontal Axis" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="qtcb" nullable="true" remarks="Bazett's Corrected QT Interval (in milliseconds)" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="qt_interval" nullable="true" remarks="QT Interval (in milliseconds)" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="st_frontal_axis" nullable="true" remarks="ST Segment Frontal Axis" size="258" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="17" name="st_horizontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="t40_frontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="t40_horizontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="t_frontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="t_horizontal_axis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="ecg_institution" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="23" name="ecg_facility" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="24" name="ecg_department" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="25" name="ecg_acq_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="t40_frontal_axis" nullable="true" remarks="Terminal 40-ms Frontal Axis" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="t40_horizontal_axis" nullable="true" remarks="Terminal 40-ms Horizontal Axis" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="t_frontal_axis" nullable="true" remarks="T-wave Frontal Axis" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="t_horizontal_axis" nullable="true" remarks="T-wave Horizontal Axis" size="258" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="ecg_institution" nullable="true" remarks="Electrocardiogram Institution" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="23" name="ecg_facility" nullable="true" remarks="Electrocardiogram Facility" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="24" name="ecg_department" nullable="true" remarks="Electrocardiogram Department" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="ecg_acq_datetime" nullable="true" remarks="Electrocardiogram Acquisation DateTime" size="258" type="VARCHAR"/>
       </table>
-      <table name="education" numRows="21535" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="recorded_date" nullable="true" remarks="" size="10" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="1" name="education" nullable="true" remarks="" size="23" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="patient_deiden_id" nullable="true" remarks="" size="5" type="SMALLINT"/>
-         <column autoUpdated="false" digits="0" id="3" name="encounter_deiden_id" nullable="true" remarks="" size="10" type="VARCHAR"/>
+      <table name="education" numRows="21535" remarks="Contains patient's education information" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="recorded_date" nullable="true" remarks="Education Informatioin Recorded Date" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="education" nullable="true" remarks="Education (years or highest level)" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
       </table>
-      <table name="encounters" numRows="972128" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="25" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="index_encounter_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="hospital" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="encounter_effective_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="admit_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="admit_source" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="dischg_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="sex" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="race" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="ethnicity" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="language" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="city" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="country" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="zip" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="state" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="county" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="marital_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="ed_arrival_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="attending_dr_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="referring_dr_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="isdead_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="encounter_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="23" name="appointment_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="24" name="patient_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="25" name="hosp_svc_dept" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="26" name="hosp_svc_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="27" name="location_of_svc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="28" name="external_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="29" name="birth_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="30" name="payer" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="31" name="icd9_admit_diagnosis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="32" name="icd9_admit_diagnosis_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="33" name="icd9_admit_diagnosis_group" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="34" name="icd10_admit_diagnosis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="35" name="icd10_admit_diagnosis_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="36" name="icd10_admit_diagnosis_group" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="37" name="admit_priority" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="38" name="seen_in_ed_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="39" name="seen_in_or_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="40" name="dischg_disposition" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="41" name="dischg_svc_dept_ip_obs" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="42" name="dischg_svc_desc_ip_obs" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="43" name="death_indicator" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="44" name="ssdi_death_indicator" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="45" name="death_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="46" name="aids" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="47" name="cancer" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="48" name="cerebrovascular_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="49" name="chf" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="50" name="copd" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="51" name="dementia" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="52" name="diabetes_w_o_complications" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="53" name="diabetes_w_complications" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="54" name="m_i" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="55" name="metastatic_carcinoma" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="56" name="mild_liver_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="57" name="moderate_severe_liver_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="58" name="paraplegia_hemiplegia" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="59" name="peptic_ulcer_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="60" name="peripheral_vascular_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="61" name="renal_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="62" name="rheumatologic_disease" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="63" name="aids_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="64" name="cancer_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="65" name="cerebrovascular_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="66" name="chf_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="67" name="copd_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="68" name="dementia_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="69" name="diabetes_w_o_complications_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="70" name="diabetes_w_complications_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="71" name="m_i_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="72" name="metastatic_carcinoma_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="73" name="mild_liver_disease_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="74" name="moderate_severe_liver_disease_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="75" name="paraplegia_hemiplegia_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="76" name="peptic_ulcer_disease_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="77" name="peripheral_vascular_disease_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="78" name="renal_disease_poa" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="79" name="rheumatologic_poa" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="80" name="charlson_comorbidity_total_score" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="81" name="height_cm" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="82" name="weight_kgs" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="83" name="ssdi_death_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="84" name="smoking_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="85" name="ip_obs_admit_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="86" name="ip_obs_dischg_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="87" name="admit_datetime_from_billing" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="88" name="dischg_datetime_from_billing" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="89" name="ed_dischg_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="encounters" numRows="972128" remarks="Contains demographic, comorbidities, admission-discharge, and death related information for each encounter" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="index_encounter_y_n" nullable="true" remarks="This variable indicates whether this encounter is a surgical encounter" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="hospital" nullable="true" remarks="Location of care" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="encounter_effective_date" nullable="true" remarks="The date that the patient received services offered by the Shands UF hospital." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="admit_datetime" nullable="true" remarks="It represents the first time the patient was placed in a room in the hospital." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="admit_source" nullable="true" remarks="The source where the patient was admited." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="dischg_datetime" nullable="true" remarks="This is only populated for hospital encounters.  It represents the date and time the patient was discharged from the hospital. Format is mm/dd/yyyy HH:mm." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="sex" nullable="true" remarks="This object represents the current patient sex only.  It is not the sex of the patient at any individual encounter." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="race" nullable="true" remarks="represents the current patient race only." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="ethnicity" nullable="true" remarks="This object represents the current patient ethnicity only." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="language" nullable="true" remarks="This object represents the current patient language only." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="city" nullable="true" remarks="Patient city at the time of the encounter." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="country" nullable="true" remarks="Patient's country." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="zip" nullable="true" remarks="Patient's zip code at the time of the encounter." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="state" nullable="true" remarks="2-letter abbreviation of patient's state at the time of the encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="county" nullable="true" remarks="Returned will be either the Florida county name (for Florida patients) or &quot;z non-FL or unk&quot; (for all other patients)." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="marital_status" nullable="true" remarks="Possible values are DIVORCED,  LIFE PARTNER/SIG OTHER, MARRIED, SEPARATED, SINGLE, OTHER, UNKNOWN, WIDOWED." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="ed_arrival_datetime" nullable="true" remarks="The date and time that the patient enters the Emergency Department (prior to OR surgery)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="attending_dr_deiden_id" nullable="true" remarks="Attending Physician name." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="referring_dr_deiden_id" nullable="true" remarks="Referring Doctor for the encounter." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="isdead_y_n" nullable="true" remarks="Output is a 'Y' or 'N'.   This datum indicates whether or not Shands has been notified that the patient is dead." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="encounter_type" nullable="true" remarks="This object is the type of the encounter (e.g., HOSPITAL ENCOUNTER, OFFICE VISIT, SURGERY, ANESTHESIA EVENT)." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="23" name="appointment_status" nullable="true" remarks="Status of the appointment. Values include: Arrived, Canceled, No Show, Left without seen, Scheduled." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="24" name="patient_type" nullable="true" remarks="The most recent patient type for the encounter." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="hosp_svc_dept" nullable="true" remarks="Description of the College of Medicine Department (Medicine, Surgery, Peds, etc.) that is associated with the hospital service of the last attending doctor of record." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="26" name="hosp_svc_desc" nullable="true" remarks="Description of Hospital Service or Medical Service that is associated with the last attending doctor of record." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="27" name="location_of_svc" nullable="true" remarks="The clinic or hospital department visited by the patient.  For inpatients, this represents the final department that the patient was in." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="28" name="external_name" nullable="true" remarks="External name of the final department that the patient was in" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="29" name="birth_date" nullable="true" remarks="Patient's birth date.  Format is mm/dd/yyyy." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="30" name="payer" nullable="true" remarks="The payer associated with the primary insurance." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="31" name="icd9_admit_diagnosis" nullable="true" remarks="This is the condition with which a patient first presents." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="32" name="icd9_admit_diagnosis_desc" nullable="true" remarks="Text description of the Admit Diagnosis code." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="33" name="icd9_admit_diagnosis_group" nullable="true" remarks="This is the category that the Admit Diagnosis is in" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="34" name="icd10_admit_diagnosis" nullable="true" remarks="This is the condition with which a patient first presents." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="35" name="icd10_admit_diagnosis_desc" nullable="true" remarks="Text description of the Admit Diagnosis code." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="36" name="icd10_admit_diagnosis_group" nullable="true" remarks="This is the category that the Admit Diagnosis is in" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="37" name="admit_priority" nullable="true" remarks="Admit Priority (e.g., EMERGENT, NEWBORN, ELECTIVE, etc.)" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="38" name="seen_in_ed_y_n" nullable="true" remarks="This objects outputs a 'Y' or an 'N' depending on whether a patient had an encounter in the ED." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="39" name="seen_in_or_y_n" nullable="true" remarks="The indicator will show a 'Y' for those patients who had an OR procedure during their hospital stay (encounter)." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="40" name="dischg_disposition" nullable="true" remarks="Discharge Disposition Description: TO HOME, TO REHAB, LWBS, etc." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="41" name="dischg_svc_dept_ip_obs" nullable="true" remarks="Department of the service of the attending physician at time of discharge (Medicine, Pediatrics, etc.).   (IP/OBS only.)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="42" name="dischg_svc_desc_ip_obs" nullable="true" remarks="Description of Discharge Hospital Service or Medical Service." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="43" name="death_indicator" nullable="true" remarks="This will be marked 'Y' if the Discharge Disposition of a particular encounter indicates Expired or Organ Procurement." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="44" name="ssdi_death_indicator" nullable="true" remarks="This is based on information from the Social Security Death Index (SSDI)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="45" name="death_date" nullable="true" remarks="Date of the patient's death." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="46" name="aids" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="47" name="cancer" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="48" name="cerebrovascular_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="49" name="chf" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="50" name="copd" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="51" name="dementia" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="52" name="diabetes_w_o_complications" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="53" name="diabetes_w_complications" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="54" name="m_i" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="55" name="metastatic_carcinoma" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="56" name="mild_liver_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="57" name="moderate_severe_liver_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="58" name="paraplegia_hemiplegia" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="59" name="peptic_ulcer_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="60" name="peripheral_vascular_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="61" name="renal_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="62" name="rheumatologic_disease" nullable="true" remarks="This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="63" name="aids_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="64" name="cancer_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="65" name="cerebrovascular_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="66" name="chf_poa" nullable="true" remarks="Congestive heart failure.  POA = Present on Admission. This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="67" name="copd_poa" nullable="true" remarks="Chronic obstuctive pulmonary disease. POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="68" name="dementia_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="69" name="diabetes_w_o_complications_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="70" name="diabetes_w_complications_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="71" name="m_i_poa" nullable="true" remarks="Myocardial infarction. POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="72" name="metastatic_carcinoma_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="73" name="mild_liver_disease_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="74" name="moderate_severe_liver_disease_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="75" name="paraplegia_hemiplegia_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="76" name="peptic_ulcer_disease_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="77" name="peripheral_vascular_disease_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="78" name="renal_disease_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="79" name="rheumatologic_poa" nullable="true" remarks="POA = Present on Admission.This will be a 1 if present or a 0 if not present." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="80" name="charlson_comorbidity_total_score" nullable="true" remarks="This score is computed based on 12 weighted comorbidities per the methodology defined by Quan, H., et. al. in a 2011 article." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="81" name="height_cm" nullable="true" remarks="Patient's height in centimeters (cm) at the time of the encounter." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="82" name="weight_kgs" nullable="true" remarks="Patient's weight in kilograms (kg) at the time of the encounter." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="83" name="ssdi_death_date" nullable="true" remarks="Patient's death date, based on the information from the Social Security Death Index (SSDI)." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="84" name="smoking_status" nullable="true" remarks="Patient's smoking status." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="85" name="ip_obs_admit_datetime" nullable="true" remarks="The date and time that the inpatient was admitted to the Shands UF hospital." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="86" name="ip_obs_dischg_datetime" nullable="true" remarks="The date and time that the inpatient was discharged from the Shands UF hospital." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="87" name="admit_datetime_from_billing" nullable="true" remarks="The admited date and time from billing." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="88" name="dischg_datetime_from_billing" nullable="true" remarks="The discharged date and time from billing." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="89" name="ed_dischg_datetime" nullable="true" remarks="The date and time that the patient was discharged from the ED (Emergency Department)." size="255" type="VARCHAR"/>
       </table>
-      <table name="glasgow" numRows="866278" remarks="" type="TABLE">
+      <table name="glasgow" numRows="866278" remarks="Contains Glasgow coma score including its components: eye, verbal, motor and sum" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator if flowsheet data tied to anesthesia encounter" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="glasgow_coma_datetime" nullable="true" remarks="Indicator if data occurred between anesthesia start/stop times" size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="organ_procurement_notified_y_n" nullable="true" remarks="The date and time when the level of consciousness was evaluated" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="glasgow_coma_adult_eye_opening" nullable="true" remarks="Lifequest notified of GCS of score equal 5 or less than 5" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="glasgow_coma_adult_verbal_response" nullable="true" remarks="Score of eye opening response for adult patient, rated on a scale of 1 to 4" size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="glasgow_coma_adult_motor_response" nullable="true" remarks="Score of verbal response for adult patient, rated on a scale of 1 to 5." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="glasgow_coma_adult_score" nullable="true" remarks="Score of motor response for adult patient, rated on a scale of 1 to 6." size="255" type="VARCHAR"/>
+      </table>
+      <table name="height_and_weight" numRows="393409" remarks="Contains patients’ height and weight data with date and time stamp for each encounter" type="TABLE">
          <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="glasgow_coma_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="organ_procurement_notified_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="glasgow_coma_adult_eye_opening" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="glasgow_coma_adult_verbal_response" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="glasgow_coma_adult_motor_response" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="glasgow_coma_adult_score" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="height_weight_datetime" nullable="true" remarks="The date and time that the patient's height and weight are measured." size="256" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="weight_kgs" nullable="true" remarks="Patient's weight in kilograms (kg) at the time of the encounter." size="257" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="height_cm" nullable="true" remarks="Patient's height in centimeters (cm) at the time of the encounter." size="255" type="VARCHAR"/>
       </table>
-      <table name="height_and_weight" numRows="393409" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="height_weight_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="weight_kgs" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="height_cm" nullable="true" remarks="" size="255" type="VARCHAR"/>
-      </table>
-      <table name="intake_outtake" numRows="1632104" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="i_o_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="autologous_volume_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="platelets_volume_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="emesis" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="urine_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="ffp_volume_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="ffp_units" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="prbc_units" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="estimated_blood_loss_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="csf_ventric_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="csf_lumbar_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="intake_outtake" numRows="1632104" remarks="Contains measurements of intake and output" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="i_o_datetime" nullable="true" remarks="Intake/Outtake DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="autologous_volume_ml" nullable="true" remarks="Autologous Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="platelets_volume_ml" nullable="true" remarks="Platelets Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="emesis" nullable="true" remarks="Emesis Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="urine_output" nullable="true" remarks="Urine Output" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="ffp_volume_ml" nullable="true" remarks="Fresh Frozen Plasma Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="ffp_units" nullable="true" remarks="Fresh Frozen Plasma Units" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="prbc_units" nullable="true" remarks="Packed Red Blood Cells Units" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="estimated_blood_loss_ml" nullable="true" remarks="Estimated Blood Loss Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="csf_ventric_output" nullable="true" remarks="Cerebral Spinal Fluid Ventric Output" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="csf_lumbar_output" nullable="true" remarks="Cerebral Spinal Fluid Lumbar Output" size="255" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="14" name="nasogastric_tube_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="platelets" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="other_io_product" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="prbc_volume_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="chest_tube" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="cellsaver" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="cryoprecipitate_units" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="cryoprecipitate_volume_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="albumin_volume_ml" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="23" name="stool" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="platelets" nullable="true" remarks="Platelets Units" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="other_io_product" nullable="true" remarks="Other Intake/Outtake Product" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="prbc_volume_ml" nullable="true" remarks="Packed Red Blood Cells Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="chest_tube" nullable="true" remarks="Fluid Colume out from Chest Tube" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="cellsaver" nullable="true" remarks="Blood Cell Counts through Cell saver" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="cryoprecipitate_units" nullable="true" remarks="Cryoprecipitate Units" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="cryoprecipitate_volume_ml" nullable="true" remarks="Cryoprecipitate Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="albumin_volume_ml" nullable="true" remarks="Albumin Volume" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="23" name="stool" nullable="true" remarks="Stool Amount" size="255" type="VARCHAR"/>
       </table>
-      <table name="labs" numRows="16790446" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="lab_result" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="lab_unit" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="normal_low" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="normal_high" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="result_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="inferred_specimen_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="lab_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="common_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="external_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="lab_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="order_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="proc_code" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="proc_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="stamped_and_inferred_loinc_desc_code" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="stamped_and_inferred_loinc_code" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="labs" numRows="16790446" remarks="Contains laboratory results with details including lab names, specimen taken date and time, unit, and LOINC codes." type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="lab_result" nullable="true" remarks="Lab Result" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="lab_unit" nullable="true" remarks="Lab Unit" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="normal_low" nullable="true" remarks="Normal Lower Bound of Lab Result" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="normal_high" nullable="true" remarks="Normal Upper Bound of Lab Result" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="result_datetime" nullable="true" remarks="Result Available DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="inferred_specimen_datetime" nullable="true" remarks="Inferred Specimen Taken DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="lab_name" nullable="true" remarks="Lab Name" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="common_name" nullable="true" remarks="Common Name of Lab Name" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="external_name" nullable="true" remarks="External Name of Lab Name" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="lab_id" nullable="true" remarks="Lab ID" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="order_datetime" nullable="true" remarks="Order DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="proc_code" nullable="true" remarks="Procudure Code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="proc_desc" nullable="true" remarks="Procudure Code Description" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="stamped_and_inferred_loinc_desc_code" nullable="true" remarks="Stamped and Inferred LOINC Description &amp; Code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="stamped_and_inferred_loinc_code" nullable="true" remarks="Stamped and Inferred LOINC Code" size="255" type="VARCHAR"/>
       </table>
-      <table name="mac_components" numRows="1046355" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="5" type="SMALLINT"/>
-         <column autoUpdated="false" digits="0" id="1" name="recorded_time" nullable="true" remarks="" size="16" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="disp_name" nullable="true" remarks="" size="16" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="meas_value" nullable="true" remarks="" size="5" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="encounter_deiden_id" nullable="true" remarks="" size="9" type="VARCHAR"/>
+      <table name="mac_components" numRows="1012174" remarks="Contains the information about the Minimum Alveolar Concentration (MAC)" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="RECORDED_TIME" nullable="true" remarks="The date and time when MAC (Minimum Alveolar Concentration) was ussed to measure anesthetic potencies or adequate dosing" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="DISP_NAME" nullable="true" remarks="Name of the MAC component. Values include:  Desflurane Exp, Desflurane Insp, Isoflurane Exp, Isoflurane Insp, Sevoflurane Exp, or Sevoflurane Insp." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="MEAS_VALUE" nullable="true" remarks="MAC component value" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number." size="255" type="VARCHAR"/>
       </table>
-      <table name="meds" numRows="2191333" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="med_order_num" nullable="true" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="3" name="med_order_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="med_order_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="med_order_display_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="med_order_freq_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="med_order_discrete_dispense_qty" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="med_order_discrete_disp_unit" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="med_order_discrete_dose" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="med_order_discrete_dose_unit" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="med_order_route" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="med_order_qty" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="med_order_refills" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="med_order_refills_remaining" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="med_order_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="med_order_start_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="med_order_end_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="med_order_discontinue_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="ambulatory_prescribed_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="historical_med_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="mar_action" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="taken_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="23" name="total_dose_character" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="24" name="med_dose_unit_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="25" name="anes_ordered_med_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="26" name="med_duration_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="27" name="med_duration_unit_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="28" name="med_infusion_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="29" name="med_infusion_rate_unit_desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="30" name="med_generic_name_strength_concat" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="31" name="med_name_strength_concat" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="32" name="med_therapy_class_concat" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="33" name="pharmacy_class_concat" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="34" name="pharmacy_subclass_concat" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="35" name="rxnorm_concat" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="meds" numRows="2191333" remarks="Contains medication data with details including medication name, dose, and date and time stamps" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="med_order_num" nullable="true" remarks="Medication Order Num" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="med_order_status" nullable="true" remarks="Medication Order Status" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="med_order_desc" nullable="true" remarks="Medication Order Descescription" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="med_order_display_name" nullable="true" remarks="Medication Order Display Name" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="med_order_freq_desc" nullable="true" remarks="Medication Order Frequency Descescription" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="med_order_discrete_dispense_qty" nullable="true" remarks="Medication Order Discrete Dispense Quantity" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="med_order_discrete_disp_unit" nullable="true" remarks="Medication Order Discrete Dispense Unit" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="med_order_discrete_dose" nullable="true" remarks="Medication Order Discrete Dose" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="med_order_discrete_dose_unit" nullable="true" remarks="Medication Order Discrete Dose Unit" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="med_order_route" nullable="true" remarks="Medication Order Route" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="med_order_qty" nullable="true" remarks="Medication Order Quantity" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="med_order_refills" nullable="true" remarks="Medication Order Refills Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="med_order_refills_remaining" nullable="true" remarks="Medication Order Refills Remaining Number of Refills" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="med_order_datetime" nullable="true" remarks="Medication  Order Datetime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="med_order_start_datetime" nullable="true" remarks="Medication Order Start Datetime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="med_order_end_datetime" nullable="true" remarks="Medication Order End Datetime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="med_order_discontinue_date" nullable="true" remarks="Medication Order Discontinue Date" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="ambulatory_prescribed_y_n" nullable="true" remarks="Indicator of Ambulatory Prescribed (Outpatient)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="historical_med_y_n" nullable="true" remarks="Indicator of Historical Medications" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="mar_action" nullable="true" remarks="Medical Administration Record Action Taken" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="taken_datetime" nullable="true" remarks="Action Taken DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="23" name="total_dose_character" nullable="true" remarks="Total Dose (Char)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="24" name="med_dose_unit_desc" nullable="true" remarks="Medication Unit Dose Description" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="anes_ordered_med_y_n" nullable="true" remarks="Indicator of Medication Prescribed by Anaesthetist" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="26" name="med_duration_desc" nullable="true" remarks="Medication Duration Description" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="27" name="med_duration_unit_desc" nullable="true" remarks="Medication Duration Unit Description" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="28" name="med_infusion_rate" nullable="true" remarks="Medication Infusion Rate" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="29" name="med_infusion_rate_unit_desc" nullable="true" remarks="Medication Infusion Rate Unit Description" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="30" name="med_generic_name_strength_concat" nullable="true" remarks="Concatenated Medication Generic Name and Strength" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="31" name="med_name_strength_concat" nullable="true" remarks="Concatenated Medication Name and Strength" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="32" name="med_therapy_class_concat" nullable="true" remarks="Concatenated Medication Therapy Class" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="33" name="pharmacy_class_concat" nullable="true" remarks="Concatenated Pharmacy Class" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="34" name="pharmacy_subclass_concat" nullable="true" remarks="Concatenated Pharmacy Subclass" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="35" name="rxnorm_concat" nullable="true" remarks="Concatenated Medication Name" size="255" type="VARCHAR"/>
       </table>
-      <table name="mews" numRows="1338709" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="mews_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="mews_sepsis_recognition_score" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="mews_retired_score" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="mews" numRows="1338709" remarks="Contains Modified Early Warning Score (MEWS) data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="mews_datetime" nullable="true" remarks="Modified Early Warning ScoreS Recorded DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="mews_sepsis_recognition_score" nullable="true" remarks="Modified Early Warning Score Sepsis Recognition Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="mews_retired_score" nullable="true" remarks="Modified Early Warning Retired Score" size="255" type="VARCHAR"/>
       </table>
-      <table name="mobility" numRows="2204890" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="activity" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="level_of_assistance" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="positioning_frequency" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="pressure_relief" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="contributing_factors" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="head_of_bed_elevated" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="repositioned" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="anti_embolism_devices" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="anti_embolism_intervention" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="pressure_relief_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="pressure_relief_assistance" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="assistive_device" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="range_of_motion" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="heels_feet" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="cpm" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="transport_method" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="ambulation_response" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="transport_with" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="distance_ambulated_ft" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="pt_refused_anti_embolism_intervention" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="mobility" numRows="2204890" remarks="Contains the mobility situation of patients" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="The date and time when the patient's mobility was evaluated" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="activity" nullable="true" remarks="Patient's activity, such as In bed, Stood at bedside, Dangled, Ambulated in room, etc." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="level_of_assistance" nullable="true" remarks="Level of assistance provided to reposition" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="positioning_frequency" nullable="true" remarks="The frequency of reposition" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="pressure_relief" nullable="true" remarks="Patient's body parts that needed to relieve pressure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="contributing_factors" nullable="true" remarks="Factors that contributed to patient's mobility" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="head_of_bed_elevated" nullable="true" remarks="Patient's positioning during head of bed elevation" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="repositioned" nullable="true" remarks="The reposition methods that the patient used" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="anti_embolism_devices" nullable="true" remarks="Off if patient turned off the anti-embolism device" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="anti_embolism_intervention" nullable="true" remarks="Anti-embolism intervention method the the patient used" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="pressure_relief_type" nullable="true" remarks="Movement types that the patient used to relief presure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="pressure_relief_assistance" nullable="true" remarks="Equipments or assistances that the patient used to relief pressure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="assistive_device" nullable="true" remarks="The device that the patient used to assist his/her movements" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="range_of_motion" nullable="true" remarks="Status of whether the patient was able to move his/her joints." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="heels_feet" nullable="true" remarks="Status of the patient's heels and feet" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="cpm" nullable="true" remarks="Status of whether a CPM (Continuous Passive Motion) machine was used." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="transport_method" nullable="true" remarks="The method used to transport the patient. Values include Impaired Mobility, Risk of Dislodging LDAs, etc." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="ambulation_response" nullable="true" remarks="Patient's response for ambulation" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="transport_with" nullable="true" remarks="The equipment used to transport the patient" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="distance_ambulated_ft" nullable="true" remarks="Ambulation distance in ft" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="pt_refused_anti_embolism_intervention" nullable="true" remarks="Yes if patient refused to use anti-embolism intervention" size="255" type="VARCHAR"/>
       </table>
-      <table name="monitoring" numRows="71496" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="hemodynamic_monitoring_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="cardiac_index" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="cardiac_output" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="svv" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="monitoring" numRows="71496" remarks="Contains hemodynamic monitoring data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="hemodynamic_monitoring_datetime" nullable="true" remarks="Hemodynamic Monitoring DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="cardiac_index" nullable="true" remarks="Cardiac Index" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="cardiac_output" nullable="true" remarks="Cardiac Output" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="svv" nullable="true" remarks="Stroke Volume Variation" size="255" type="VARCHAR"/>
       </table>
-      <table name="morse" numRows="16" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="morse_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="morse_fall_hx" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="morse_secondary_dx" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="morse_ambulatory_aids" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="morse_intravenous" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="morse_gait_transferring" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="morse_mental_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="morse_score" nullable="true" remarks="" size="12" type="FLOAT"/>
-         <column autoUpdated="false" digits="0" id="11" name="fall_risk_indicator" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="morse" numRows="16" remarks="Contains Morse falls scale data to identify risk factors for falls in hospitalized patients" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="morse_datetime" nullable="true" remarks="Morse Fall Risk Scale Score Recorded DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="morse_fall_hx" nullable="true" remarks="Morse Fall Hiscory of Falling Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="morse_secondary_dx" nullable="true" remarks="Morse Secondary Diagnosis Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="morse_ambulatory_aids" nullable="true" remarks="Morse Ambulatory Aids Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="morse_intravenous" nullable="true" remarks="Morse Intravenous Therapy Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="morse_gait_transferring" nullable="true" remarks="Morse Gait/Transferring Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="morse_mental_status" nullable="true" remarks="Morse Mental Status Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="morse_score" nullable="true" remarks="Final Morse Fall Risk Scale Score" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="fall_risk_indicator" nullable="true" remarks="Indicator of Fall Risk" size="255" type="VARCHAR"/>
       </table>
-      <table name="nephrology_consults" numRows="4511" remarks="" type="TABLE">
+      <table name="nephrology_consults" numRows="4511" remarks="Contains the nephrology consults" type="TABLE">
          <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
          <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="2" name="ORDR_PLACE_DATE" nullable="true" remarks="" size="255" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="3" name="PROC_CD_DESC" nullable="true" remarks="" size="255" type="VARCHAR"/>
       </table>
-      <table name="ob_history" numRows="1051" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="delivery_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="1" name="patient_deiden_id" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="ob_history" numRows="1051" remarks="Contains mother patient's information about delivering of the baby" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="delivery_date" nullable="true" remarks="Delivery of Baby Date" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Mother Patient's Medical Record Number" size="255" type="VARCHAR"/>
       </table>
-      <table name="or_case_schedule" numRows="42443" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="case_status" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="case_class" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="sched_location" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="sched_north_south" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="sched_site" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="sched_site_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="sched_service" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="sched_room" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="sched_room_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="sched_trauma_room_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="sched_surg_service" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="sched_patient_class_code" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="sched_anesthesia_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="sched_post_op_location" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="sched_case_date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="sched_start_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="sched_start_time_char" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="sched_stop_time_char" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="sched_base_procedure_1" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="sched_base_procedure_code_1" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="sched_cpt_1" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="23" name="sched_cpt_1_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="24" name="sched_base_procedure_2" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="25" name="sched_base_procedure_code_2" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="26" name="sched_cpt_2" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="27" name="sched_cpt_2_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="28" name="sched_base_procedure_3" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="29" name="sched_base_procedure_code_3" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="30" name="sched_cpt_3" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="31" name="sched_cpt_3_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="32" name="sched_base_procedure_4" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="33" name="sched_base_procedure_code_4" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="34" name="sched_cpt_4" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="35" name="sched_cpt_4_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="36" name="sched_base_procedure_5" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="37" name="sched_base_procedure_code_5" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="38" name="sched_cpt_5" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="39" name="sched_cpt_5_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="40" name="sched_base_procedure_6" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="41" name="sched_base_procedure_code_6" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="42" name="sched_cpt_6" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="43" name="sched_cpt_6_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="44" name="sched_base_procedure_7" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="45" name="sched_base_procedure_code_7" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="46" name="sched_cpt_7" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="47" name="sched_cpt_7_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="48" name="sched_base_procedure_8" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="49" name="sched_base_procedure_code_8" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="50" name="sched_cpt_8" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="51" name="sched_cpt_8_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="52" name="sched_base_procedure_9" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="53" name="sched_base_procedure_code_9" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="54" name="sched_cpt_9" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="55" name="sched_cpt_9_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="56" name="sched_base_procedure_10" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="57" name="sched_base_procedure_code_10" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="58" name="sched_cpt_10" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="59" name="sched_cpt_10_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="60" name="room_start_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="61" name="room_end_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="62" name="incision_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="63" name="dressing_datetime" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="64" name="anesthesia_start_datetime" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="65" name="anesthesia_stop_datetime" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="66" name="base_procedure_1" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="67" name="base_procedure_code_1" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="68" name="cpt_1" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="69" name="cpt_1_description" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="70" name="base_procedure_2" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="71" name="base_procedure_code_2" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="72" name="cpt_2" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="73" name="cpt_2_description" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="74" name="base_procedure_3" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="75" name="base_procedure_code_3" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="76" name="cpt_3" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="77" name="cpt_3_description" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="78" name="base_procedure_4" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="79" name="base_procedure_code_4" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="80" name="cpt_4" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="81" name="cpt_4_description" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="82" name="base_procedure_5" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="83" name="base_procedure_code_5" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="84" name="cpt_5" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="85" name="cpt_5_description" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="86" name="base_procedure_6" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="87" name="base_procedure_code_6" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="88" name="cpt_6" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="89" name="cpt_6_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="90" name="base_procedure_7" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="91" name="base_procedure_code_7" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="92" name="cpt_7" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="93" name="cpt_7_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="94" name="base_procedure_8" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="95" name="base_procedure_code_8" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="96" name="cpt_8" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="97" name="cpt_8_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="98" name="base_procedure_9" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="99" name="base_procedure_code_9" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="100" name="cpt_9" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="101" name="cpt_9_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="102" name="base_procedure_10" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="103" name="base_procedure_code_10" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="104" name="cpt_10" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="105" name="cpt_10_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="106" name="service" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="107" name="surgery_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="108" name="location" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="109" name="site" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="110" name="site_description" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="111" name="room_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="112" name="nora_yn" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="113" name="gi_room_yn" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="114" name="sched_surgeon_deiden_id" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="115" name="main_surgeon_deiden_id" nullable="true" remarks="" size="65535" type="TEXT"/>
-         <column autoUpdated="false" digits="0" id="116" name="main_anesthesiologist_deiden_id" nullable="true" remarks="" size="65535" type="TEXT"/>
+      <table name="or_case_schedule" numRows="42443" remarks="Contains surgery related data including operating room, time, procedure code, and doctor for each surgery" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="case_status" nullable="true" remarks="Status for cases that were scheduled." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="case_class" nullable="true" remarks="The native (user selected) value from EPIC system. Refer to the" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="sched_location" nullable="true" remarks="Scheduled location of surgery" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="sched_north_south" nullable="true" remarks="Scheduled location of surgery.  Groups the ORs into North, South and Other." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="sched_site" nullable="true" remarks="Scheduled site of surgery: NORA (North Tower), SORA (South Tower), CSC (Children's Surgical Center), and FSC (Florida Surgical Center), MORA (Shands AGH)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="sched_site_description" nullable="true" remarks="Scheduled site of surgery with more breakdown for North and South Tower ORs.  (e.g. - 'GNV CATH LAB','GNV GI SUITE')" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="sched_service" nullable="true" remarks="The surgical service of the scheduled case.  These mimic ADT services except that Anesthesia and Pain Management are combined." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="sched_room" nullable="true" remarks="The room where the case was scheduled.  (This may not be the room where the case actually occurred.)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="sched_room_type" nullable="true" remarks="Categorizes scheduled rooms into functional areas such as: CATH LAB, L&amp;D, Main OR - North Tower, Main OR - South Tower, GI SUITE, GI SEC" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="sched_trauma_room_y_n" nullable="true" remarks="Indicator of dedicated south tower trauma room" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="sched_surg_service" nullable="true" remarks="In OpTime, this is the primary surgeon on panel 1.  In ORMIS, the main surgeon was the surgeon who scheduled the case." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="sched_patient_class_code" nullable="true" remarks="Outputs IP, ED, POA or OP.  Observation patients and CM Pending patients (among other types) are classified as OP." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="sched_anesthesia_type" nullable="true" remarks="The type of anesthesia scheduled for the case." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="sched_post_op_location" nullable="true" remarks="The scheduled destination following surgery." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="sched_case_date" nullable="true" remarks="The date surgery is scheduled to be performed." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="sched_start_datetime" nullable="true" remarks="The date and time surgery is scheduled to be performed." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="sched_start_time_char" nullable="true" remarks="The time that the surgery is scheduled to be performed in 24 hour format.  Ex: 1300" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="sched_stop_time_char" nullable="true" remarks="The time that the surgery is scheduled to finish in 24 hour format.  Ex: 1300" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="sched_base_procedure_1" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="sched_base_procedure_code_1" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="sched_cpt_1" nullable="true" remarks="Scheduled CPT code(Current Procedural Terminology)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="23" name="sched_cpt_1_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="24" name="sched_base_procedure_2" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="sched_base_procedure_code_2" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="26" name="sched_cpt_2" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="27" name="sched_cpt_2_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="28" name="sched_base_procedure_3" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="29" name="sched_base_procedure_code_3" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="30" name="sched_cpt_3" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="31" name="sched_cpt_3_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="32" name="sched_base_procedure_4" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="33" name="sched_base_procedure_code_4" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="34" name="sched_cpt_4" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="35" name="sched_cpt_4_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="36" name="sched_base_procedure_5" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="37" name="sched_base_procedure_code_5" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="38" name="sched_cpt_5" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="39" name="sched_cpt_5_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="40" name="sched_base_procedure_6" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="41" name="sched_base_procedure_code_6" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="42" name="sched_cpt_6" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="43" name="sched_cpt_6_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="44" name="sched_base_procedure_7" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="45" name="sched_base_procedure_code_7" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="46" name="sched_cpt_7" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="47" name="sched_cpt_7_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="48" name="sched_base_procedure_8" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="49" name="sched_base_procedure_code_8" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="50" name="sched_cpt_8" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="51" name="sched_cpt_8_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="52" name="sched_base_procedure_9" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="53" name="sched_base_procedure_code_9" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="54" name="sched_cpt_9" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="55" name="sched_cpt_9_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="56" name="sched_base_procedure_10" nullable="true" remarks="Scheduled base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="57" name="sched_base_procedure_code_10" nullable="true" remarks="Scheduled base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="58" name="sched_cpt_10" nullable="true" remarks="Scheduled CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="59" name="sched_cpt_10_description" nullable="true" remarks="Text description of the scheduled CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="60" name="room_start_datetime" nullable="true" remarks="The date and time on which the surgery began (mm/dd/yyyy HH:mm)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="61" name="room_end_datetime" nullable="true" remarks="The date and time that the surgery ended" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="62" name="incision_datetime" nullable="true" remarks="The date and time that the incision was performed" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="63" name="dressing_datetime" nullable="true" remarks="The date and time when the dressing was applied" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="64" name="anesthesia_start_datetime" nullable="true" remarks="The date and time that anesthesia started" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="65" name="anesthesia_stop_datetime" nullable="true" remarks="The date and time that anesthesia ended" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="66" name="base_procedure_1" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="67" name="base_procedure_code_1" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="68" name="cpt_1" nullable="true" remarks="CPT code. CPT (Current Procedural Terminology)" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="69" name="cpt_1_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="70" name="base_procedure_2" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="71" name="base_procedure_code_2" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="72" name="cpt_2" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="73" name="cpt_2_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="74" name="base_procedure_3" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="75" name="base_procedure_code_3" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="76" name="cpt_3" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="77" name="cpt_3_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="78" name="base_procedure_4" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="79" name="base_procedure_code_4" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="80" name="cpt_4" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="81" name="cpt_4_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="82" name="base_procedure_5" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="83" name="base_procedure_code_5" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="84" name="cpt_5" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="85" name="cpt_5_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="86" name="base_procedure_6" nullable="true" remarks="Base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="87" name="base_procedure_code_6" nullable="true" remarks="Base procedure code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="88" name="cpt_6" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="89" name="cpt_6_description" nullable="true" remarks="Text description of the CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="90" name="base_procedure_7" nullable="true" remarks="Base procedure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="91" name="base_procedure_code_7" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="92" name="cpt_7" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="93" name="cpt_7_description" nullable="true" remarks="Text description of the CPT code" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="94" name="base_procedure_8" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="95" name="base_procedure_code_8" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="96" name="cpt_8" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="97" name="cpt_8_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="98" name="base_procedure_9" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="99" name="base_procedure_code_9" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="100" name="cpt_9" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="101" name="cpt_9_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="102" name="base_procedure_10" nullable="true" remarks="Base procedure" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="103" name="base_procedure_code_10" nullable="true" remarks="Base procedure code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="104" name="cpt_10" nullable="true" remarks="CPT code. Made up of 5 characters, and may be numeric or alphanumeric." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="105" name="cpt_10_description" nullable="true" remarks="Text description of the CPT code" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="106" name="service" nullable="true" remarks="The surgical service of the scheduled case.  These mimic ADT services except that Anesthesia and Pain Management are combined" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="107" name="surgery_type" nullable="true" remarks="The surgery type based on scheduling lead" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="108" name="location" nullable="true" remarks="Location of surgery corresponding with the managed areas: FSC/CSC and SUF (North &amp; South towers combined)" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="109" name="site" nullable="true" remarks="Site of surgery" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="110" name="site_description" nullable="true" remarks="Site of surgery with more breakdown for North and South Tower ORs.  (e.g. - 'GNV CATH LAB','GNV GI SUITE')" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="111" name="room_type" nullable="true" remarks="Type of room surgery performed in.  (e.g. - Radiology, L&amp;D, GI Suite, CATH LAB, Main OR - North Tower, Main OR - South Tower, Main OR - CSC, Main OR - FSC)" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="112" name="nora_yn" nullable="true" remarks="Y/N indicator for anesthesia performed in non-OR locations" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="113" name="gi_room_yn" nullable="true" remarks="Y/N indicator for cases performed in GI rooms." size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="114" name="sched_surgeon_deiden_id" nullable="true" remarks="Deidentified Schedule Surgeon's ID (provider's ID in CLARITY)" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="115" name="main_surgeon_deiden_id" nullable="true" remarks="Deidentified Main Surgeon's ID (provider's ID in CLARITY)" size="65535" type="TEXT"/>
+         <column autoUpdated="false" digits="0" id="116" name="main_anesthesiologist_deiden_id" nullable="true" remarks="Deidentified Main Anesthesiologist's ID (provider's ID in CLARITY)" size="65535" type="TEXT"/>
       </table>
-      <table name="pain" numRows="3194658" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="pain_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="pain_pre_post_indicator" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="pain_uf_dvprs" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="pain_jax" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="pain" numRows="3194658" remarks="Contains pain assessment related data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="pain_datetime" nullable="true" remarks="Pain Assessed DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="pain_pre_post_indicator" nullable="true" remarks="Indicator of Pain related to Pre/Post Treatment" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="pain_uf_dvprs" nullable="true" remarks="Pain Score on UF Defense and Veterans Pain Rating Scale" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="pain_jax" nullable="true" remarks="Pain Score at JAX" size="255" type="VARCHAR"/>
       </table>
-      <table name="procedures" numRows="3935880" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="" size="5" type="SMALLINT"/>
-         <column autoUpdated="false" digits="0" id="1" name="proc_code_type" nullable="true" remarks="" size="5" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="proc_code" nullable="true" remarks="" size="7" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="procedure_hierarchy" nullable="true" remarks="" size="256" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="proc_date" nullable="true" remarks="" size="10" type="VARCHAR"/>
+      <table name="procedures" numRows="3935880" remarks="Contains the patient procedure records: ICD9, ICD10, and CPT including the “procedure_hierarchy”" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="MRN (UF): Patient's Medical Record Number" size="5" type="SMALLINT"/>
+         <column autoUpdated="false" digits="0" id="1" name="proc_code_type" nullable="true" remarks="Procedure Code Type" size="5" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="proc_code" nullable="true" remarks="Procedure Code" size="7" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="procedure_hierarchy" nullable="true" remarks="Procedure Hierarchy" size="600" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="proc_date" nullable="true" remarks="Procedure Date" size="10" type="VARCHAR"/>
       </table>
-      <table name="rass" numRows="1185419" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="vital_sign_measure_name" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="meas_value" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="rass" numRows="1185419" remarks="Contains Richmond Agitation-Sedation Scale (RASS) sores of patients measured at different time points" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="Richmond Agitation-Sedation Scale Score Recorded DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="vital_sign_measure_name" nullable="true" remarks="Vital Sign Measure Name" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="meas_value" nullable="true" remarks="Richmond Agitation-Sedation Scale Score" size="255" type="VARCHAR"/>
       </table>
-      <table name="realm" numRows="31443" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="realm_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="health_literacy_assessment" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="realm" numRows="31443" remarks="Contains the results from Literacy Assessment Tool called Rapid Estimate of Adult Literacy in Medicine (REALM)" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="realm_datetime" nullable="true" remarks="Rapid Estimate of Adult Literacy in Medicine Test Performed DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="health_literacy_assessment" nullable="true" remarks="Health Literacy Assessment Result" size="255" type="VARCHAR"/>
       </table>
-      <table name="respiratory" numRows="11287695" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="respiratory_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="respiratory_device" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="spo2" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="fio2" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="etco2" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="etco2_oral_nasal" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="o2_l_min" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="10" name="o2_ml_min" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="11" name="peep" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="12" name="tidal_volume" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="13" name="adult_mech_resp_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="14" name="adult_spont_resp_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="15" name="adult_vent_mode" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="16" name="adult_vent_start_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="17" name="adult_vent_end_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="18" name="respiratory_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="19" name="pip" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="20" name="rso2_baseline_left" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="21" name="rso2_baseline_right" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="22" name="tidal_volume_exhaled" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="respiratory" numRows="11287695" remarks="Contains respiration related data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="respiratory_datetime" nullable="true" remarks="Respiratory DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="respiratory_device" nullable="true" remarks="Respiratory Device" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="spo2" nullable="true" remarks="Peripheral Oxygen Saturation" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="fio2" nullable="true" remarks="Fraction of Inspired Oxygen" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="etco2" nullable="true" remarks="End-tidal Carbon Dioxide Amount" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="etco2_oral_nasal" nullable="true" remarks="End-tidal Carbon Dioxide Method (Oral/Nasal)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="o2_l_min" nullable="true" remarks="O2 - L/min" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="o2_ml_min" nullable="true" remarks="O2 - mL/min" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="peep" nullable="true" remarks="End of Expiratory Pressure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="tidal_volume" nullable="true" remarks="Tidal Volume (mL)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="adult_mech_resp_rate" nullable="true" remarks="Mechanical Respiratory Rate" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="adult_spont_resp_rate" nullable="true" remarks="Spontaneous Respiratory Rate" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="15" name="adult_vent_mode" nullable="true" remarks="Adult Ventilator Mode" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="adult_vent_start_time" nullable="true" remarks="Adult Ventilator Start Time" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="17" name="adult_vent_end_time" nullable="true" remarks="Adult Ventilator End Time" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="respiratory_rate" nullable="true" remarks="Respiratory Rate" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="19" name="pip" nullable="true" remarks="Vent Peak Pressure" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="rso2_baseline_left" nullable="true" remarks="RsO2 Baseline of Left Hemisphere of Brain" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="rso2_baseline_right" nullable="true" remarks="RsO2 Baseline of Right Hemisphere of Brain" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="tidal_volume_exhaled" nullable="true" remarks="Tidal Volume Exhaled" size="255" type="VARCHAR"/>
       </table>
-      <table name="sofa" numRows="74687" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
+      <table name="sofa" numRows="74687" remarks="Contains Sequential Organ Failure Assessment (SOFA) score and its components" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital" size="255" type="VARCHAR"/>
          <column autoUpdated="false" digits="0" id="1" name="date_of_care" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="respiration" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="cns" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="cardiovascular" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="liver" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="coagulation" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="renal" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="sofa_score" nullable="true" remarks="" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="respiration" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) score Respiration component (0-4)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="cns" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) score Central Nervous System component (0-4)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="cardiovascular" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) score Cardiovascular component (0-4)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="liver" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) score Liver component (0-4)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="coagulation" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) score Coagulation component (0-4)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="renal" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) score Renal component (0-4)." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="sofa_score" nullable="true" remarks="Sequential Organ Failure Assessment (SOFA) total score (0-24)." size="255" type="VARCHAR"/>
       </table>
-      <table name="stations" numRows="114439" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="from_station" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="from_accommodation_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="at_station" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="at_accommodation_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="to_station" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="to_accommodation_type" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="enter_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="9" name="exit_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="stations" numRows="114439" remarks="Contains information regarding patient's location including enter and exit times" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="from_station" nullable="true" remarks="The nursing unit corresponding to where the patient came from." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="from_accommodation_type" nullable="true" remarks="The accommodation type corresponding to where the patient came from" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="at_station" nullable="true" remarks="The nursing unit corresponding to the patient's location at a given time." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="at_accommodation_type" nullable="true" remarks="The accommodation type corresponding to the patient's location at a given time." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="to_station" nullable="true" remarks="The nursing unit corresponding to where the patient went" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="to_accommodation_type" nullable="true" remarks="The accommodation type corresponding to where the patient went" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="enter_datetime" nullable="true" remarks="The date and time when the patient entered the Station" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="exit_datetime" nullable="true" remarks="The date and time when the patient exited the Station" size="255" type="VARCHAR"/>
       </table>
-      <table name="transfusions" numRows="24248" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="blood_product" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="meas_value" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="transfusions" numRows="24248" remarks="Contains the information about blood product transfusions of patients" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified Patient's Medical Record Number for the Shands UF hospital" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Patient's Encounter Number." size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="recorded_time" nullable="true" remarks="The date and time when blood product was transfused" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="blood_product" nullable="true" remarks="Name of the blood product transfusion" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="meas_value" nullable="true" remarks="Transfusion value" size="255" type="VARCHAR"/>
       </table>
-      <table name="vent_charges" numRows="26297" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="Svc_Date" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="Charge_Code" nullable="true" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="4" name="Charge_Code_Desc" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="vent_charges" numRows="26297" remarks="Contains respiratory therapy charges related data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="Patient_Deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="Encounter_Deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="Svc_Date" nullable="true" remarks="Respiratory Therapy Service Date (Charges)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="Charge_Code" nullable="true" remarks="Ventilator Charge Code (Charges)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="Charge_Code_Desc" nullable="true" remarks="Ventilator Charge Code Description (Charges)" size="255" type="VARCHAR"/>
       </table>
-      <table name="vitals" numRows="14737049" remarks="" type="TABLE">
-         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="false" remarks="" size="10" type="INT"/>
-         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="false" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="3" name="vitals_datetime" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="4" name="heart_rate" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="5" name="heart_rate_source" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="6" name="temp_farenheit" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="7" name="temp_celsius" nullable="true" remarks="" size="255" type="VARCHAR"/>
-         <column autoUpdated="false" digits="0" id="8" name="temp_source" nullable="true" remarks="" size="255" type="VARCHAR"/>
+      <table name="vitals" numRows="14737049" remarks="Contains heart rate and temperature data" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="patient_deiden_id" nullable="true" remarks="Deidentified MRN (UF): Patient's Medical Record Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="encounter_deiden_id" nullable="true" remarks="Deidentified Encounter # (CSN): Patient Encounter Number" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="anes_enc_y_n" nullable="true" remarks="Indicator of Anesthesia Encounter" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="vitals_datetime" nullable="true" remarks="Vital Signs Recorded DateTime" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="heart_rate" nullable="true" remarks="Heart Rate" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="heart_rate_source" nullable="true" remarks="Heart Rate Source" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="temp_farenheit" nullable="true" remarks="Temperature (Fahrenheit)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="temp_celsius" nullable="true" remarks="Temperature (Celsius)" size="255" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="temp_source" nullable="true" remarks="Temperature Source" size="255" type="VARCHAR"/>
       </table>
    </tables>
 </database>
